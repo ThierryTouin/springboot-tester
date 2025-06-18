@@ -1,0 +1,45 @@
+<configuration scan="true">
+
+  <!-- Variable utilisée pour le fichier de log -->
+  <springProperty name="LOG_FILE" source="logging.file.name" defaultValue="app.log"/>
+
+  <!-- Console par défaut -->
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Fichier de log -->
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>${LOG_FILE}</file>
+    <append>true</append>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Profil par défaut (prod si non précisé) -->
+  <root level="INFO">
+    <appender-ref ref="CONSOLE"/>
+    <appender-ref ref="FILE"/>
+  </root>
+
+  <springProfile name="dev">
+    <root level="DEBUG">
+      <appender-ref ref="CONSOLE"/>
+    </root>
+    <logger name="org.springframework" level="INFO"/>
+    <logger name="com.touin" level="DEBUG"/>
+  </springProfile>
+
+  <springProfile name="prod">
+    <root level="WARN">
+      <appender-ref ref="CONSOLE"/>
+      <appender-ref ref="FILE"/>
+    </root>
+    <logger name="org.springframework" level="WARN"/>
+    <logger name="com.touin" level="INFO"/>
+  </springProfile>
+
+</configuration>

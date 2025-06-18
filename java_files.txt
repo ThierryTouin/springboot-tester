@@ -5,3 +5,4 @@
 ./springboot-tester-exposition/src/main/java/com/touin/thierry/sb/test/springboottester/SpringBootTesterApplication.java
 ./springboot-tester-exposition/src/main/java/com/touin/thierry/sb/test/springboottester/exposition/HelloController.java
 ./springboot-tester-exposition/src/main/java/com/touin/thierry/sb/test/springboottester/exposition/PigController.java
+./springboot-tester-exposition/src/main/java/com/touin/thierry/sb/test/springboottester/exposition/VersionController.java

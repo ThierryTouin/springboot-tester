@@ -1,5 +1,5 @@
 appli:
-  version: 1.0.0
+  version: 1.0.0 (dev)
 
 
 server:
@@ -28,7 +28,7 @@ spring:
 
       log-condition-evaluation-delta: true
 
-# src/main/resources/application.yml
+# src/main/resources/application-dev.yml
 logging:
   file:
-    name: logs/app.log      
+    name: logs/dev.log      
