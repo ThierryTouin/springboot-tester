@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.touin.thierry.sb</groupId>
+    <groupId>com.touin.thierry.sb.test</groupId>
     <artifactId>springboot-tester</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
@@ -44,9 +44,11 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
+
+
     </plugins>
   </build>
 </project>

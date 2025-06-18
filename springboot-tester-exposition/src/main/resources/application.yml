@@ -9,3 +9,17 @@ management:
   endpoint:
     health:
       show-details: always
+  ## http://localhost:8080/actuator/beans    
+    beans:
+      enabled: true  
+
+
+spring:
+  devtools:
+    restart:
+      enabled: true
+      #additional-paths: ../springboot-tester-exposition/src/main/java,../springboot-tester-application/src/main/java,../springboot-tester-domain/src/main/java,../springboot-tester-exposition/target/classes,../springboot-tester-application/target/classes,../springboot-tester-domain/target/classes
+      additional-paths: ../springboot-tester-exposition/target/classes,../springboot-tester-application/target/classes,../springboot-tester-domain/target/classes
+      exclude: static/**,public/**
+
+      log-condition-evaluation-delta: true

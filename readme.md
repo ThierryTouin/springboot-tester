@@ -14,3 +14,10 @@ http://localhost:8080/hello
 - Loggers : http://localhost:8080/actuator/loggers
 - Détail santé : http://localhost:8080/actuator/health
 - Autres : http://localhost:8080/actuator/env, etc.
+- Beans : http://localhost:8080/actuator/beans
+
+
+## Pour forcer le redémarrage auto a prendre en compte les nouvelles classes, on supprime les jars
+
+find . -type f -name "springboot-tester*.jar" -path "*/target/*" -exec rm -v {} +
+rm -rv ~/.m2/repository/com/touin/thierry/sb/test/springboot-tester-*
