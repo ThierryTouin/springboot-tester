@@ -24,3 +24,7 @@ http://localhost:8080/hello
 
 find . -type f -name "springboot-tester*.jar" -path "*/target/*" -exec rm -v {} +
 rm -rv ~/.m2/repository/com/touin/thierry/sb/test/springboot-tester-*
+
+
+
+logging.config=classpath:logback-dev.xml
