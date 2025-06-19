@@ -7,6 +7,4 @@ echo "Indexation des fichiers Java..."
 find . -name "*.java" > java_files.txt
 
 echo "Watching for changes..."
-#cat java_files.txt | entr -r mvn compile -pl springboot-tester-exposition -am
-cat java_files.txt | entr -r mvn install -pl springboot-tester-exposition,springboot-tester-domain,springboot-tester-application -am
-
+cat java_files.txt | entr -r sh -c 'mvn clean install -pl springboot-tester-exposition,springboot-tester-domain,springboot-tester-application -am && touch ./restarter/trigger/.trigger.restart'

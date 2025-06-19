@@ -23,10 +23,11 @@ spring:
     restart:
       enabled: true
       #additional-paths: ../springboot-tester-exposition/src/main/java,../springboot-tester-application/src/main/java,../springboot-tester-domain/src/main/java,../springboot-tester-exposition/target/classes,../springboot-tester-application/target/classes,../springboot-tester-domain/target/classes
-      additional-paths: ../springboot-tester-exposition/target/classes,../springboot-tester-application/target/classes,../springboot-tester-domain/target/classes
+      #additional-paths: ../springboot-tester-exposition/target/classes,../springboot-tester-application/target/classes,../springboot-tester-domain/target/classes
+      additional-paths: ../restarter/trigger
       exclude: static/**,public/**
-
       log-condition-evaluation-delta: true
+      #trigger-file: ../restarter/.trigger.restart
 
 # src/main/resources/application-dev.yml
 logging:
