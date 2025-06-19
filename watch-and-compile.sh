@@ -12,13 +12,14 @@ SPRING_PID=""
 # === FONCTIONS ===
 
 start_spring() {
-  echo "[INFO] Lancement de Spring Boot avec le profil '$PROFILE'..."
+  echo "[DEBUG] start_spring() Lancement de Spring Boot avec le profil '$PROFILE'..."
   mvn spring-boot:run -Dspring-boot.run.profiles="$PROFILE" -pl "$MAIN_MODULE" > restarter/spring.log 2>&1 &
 
   echo "[INFO] Attente du démarrage du processus Java Spring Boot..."
 
   for i in {1..20}; do
     SPRING_PID=$(ps aux | grep '[j]ava' | grep -- "-cp" | grep -F "springboot-tester-exposition" | awk '{print $2}' | head -n1)
+    echo "[DEBUG] PID trouvé ? $SPRING_PID"
     if [[ -n "$SPRING_PID" ]]; then
       echo "[INFO] Spring Boot lancé avec le PID $SPRING_PID"
       return
@@ -32,6 +33,7 @@ start_spring() {
 
 
 stop_spring() {
+  echo "[DEBUG] stop_spring() with $SPRING_PID"
   if [[ -n "$SPRING_PID" ]] && ps -p "$SPRING_PID" > /dev/null; then
     echo "[INFO] Arrêt de Spring Boot (PID $SPRING_PID)..."
     kill -9 "$SPRING_PID"
