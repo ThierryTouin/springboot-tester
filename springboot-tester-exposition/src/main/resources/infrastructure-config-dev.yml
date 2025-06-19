@@ -1,0 +1,5 @@
+myapp:
+  feature:
+    enabled: true
+  business:
+    threshold: 100

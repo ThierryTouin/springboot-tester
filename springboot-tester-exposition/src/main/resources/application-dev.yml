@@ -33,3 +33,9 @@ spring:
 logging:
   file:
     name: logs/dev.log      
+
+# application-dev.yml (dans le module exposition)
+spring:
+  config:
+    import:
+      - classpath:infrastructure-dev-config.yml    
