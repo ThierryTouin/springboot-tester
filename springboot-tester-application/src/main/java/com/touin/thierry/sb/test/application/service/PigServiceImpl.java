@@ -20,7 +20,7 @@ private static final Logger LOGGER = LoggerFactory.getLogger(PigServiceImpl.clas
                 new PigDTO(1L, "Babe"),
                 new PigDTO(2L, "Napoleon"),
                 new PigDTO(3L, "Snowball"),
-                new PigDTO(4L, "Snowball21")
+                new PigDTO(4L, "Snowball25")
         );
 
 		if (LOGGER.isInfoEnabled()) {
