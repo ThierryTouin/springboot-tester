@@ -4,8 +4,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConfigurationProperties(prefix = "myapp")
-public class MyAppProperties {
+@ConfigurationProperties(prefix = "infrastructure")
+public class MyAppPropertiesV1 {
 
     private Feature feature = new Feature();
     private Business business = new Business();

@@ -12,6 +12,10 @@
   </parent>
   <artifactId>springboot-tester-domain</artifactId>
   <dependencies>
-    <!-- pas de dépendance Spring ici -->
+      <!-- Spring context (pour @Service, @Component, etc.) -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+      </dependency>
   </dependencies>
 </project>

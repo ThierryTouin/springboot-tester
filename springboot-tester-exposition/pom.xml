@@ -21,6 +21,16 @@
       <version>${project.version}</version>
     </dependency>
     <dependency>
+      <groupId>com.touin.thierry.sb.test</groupId>
+      <artifactId>springboot-tester-domain</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.touin.thierry.sb.test</groupId>
+      <artifactId>springboot-tester-infrastructure</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>

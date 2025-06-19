@@ -1,6 +1,9 @@
 package com.touin.thierry.sb.test.application.service;
 
 import com.touin.thierry.sb.test.application.dto.PigDTO;
+import com.touin.thierry.sb.test.springboottester.domain.PigBizService;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,6 +16,9 @@ import org.slf4j.LoggerFactory;
 public class PigServiceImpl implements PigService {
 
 private static final Logger LOGGER = LoggerFactory.getLogger(PigServiceImpl.class);
+
+    @Autowired
+    private PigBizService pigBizService;
 
     @Override
     public List<PigDTO> getPigs() {
@@ -27,6 +33,8 @@ private static final Logger LOGGER = LoggerFactory.getLogger(PigServiceImpl.clas
 			LOGGER.info("$>>> pigs={}",pigs);
 		}
         System.out.println(">>> pigs={}" + pigs);
+
+        pigBizService.test();
 
         return pigs.stream()
                 .map(p -> new PigDTO(p.getId(), p.getName()))

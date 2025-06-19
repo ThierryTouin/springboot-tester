@@ -1,3 +1,9 @@
+./springboot-tester-domain/src/main/java/com/touin/thierry/sb/test/springboottester/domain/MonAdaptateur.java
+./springboot-tester-domain/src/main/java/com/touin/thierry/sb/test/springboottester/domain/PigBizService.java
+./springboot-tester-domain/src/main/java/com/touin/thierry/sb/test/springboottester/domain/PigBizServiceImpl.java
+./springboot-tester-infrastructure/src/main/java/com/touin/thierry/sb/test/springboottester/infrastructure/MyAppPropertiesV2.java
+./springboot-tester-infrastructure/src/main/java/com/touin/thierry/sb/test/springboottester/infrastructure/MonAdaptateurImpl.java
+./springboot-tester-infrastructure/src/main/java/com/touin/thierry/sb/test/springboottester/infrastructure/MyAppPropertiesV1.java
 ./springboot-tester-application/src/main/java/com/touin/thierry/sb/test/application/service/PigServiceImpl.java
 ./springboot-tester-application/src/main/java/com/touin/thierry/sb/test/application/service/PigService.java
 ./springboot-tester-application/src/main/java/com/touin/thierry/sb/test/application/dto/PigDTO.java

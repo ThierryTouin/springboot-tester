@@ -21,20 +21,21 @@ management:
 spring:
   devtools:
     restart:
-      enabled: true
+      enabled: false
       #additional-paths: ../springboot-tester-exposition/src/main/java,../springboot-tester-application/src/main/java,../springboot-tester-domain/src/main/java,../springboot-tester-exposition/target/classes,../springboot-tester-application/target/classes,../springboot-tester-domain/target/classes
       additional-paths: ../springboot-tester-exposition/target/classes,../springboot-tester-application/target/classes,../springboot-tester-domain/target/classes
       exclude: static/**,public/**
 
       log-condition-evaluation-delta: true
 
+# application.yml (dans le module exposition)
+  config:
+    import:
+      - classpath:infrastructure-config.yml    
+
+
 # src/main/resources/application.yml
 logging:
   file:
     name: logs/app.log      
 
-# application.yml (dans le module exposition)
-spring:
-  config:
-    import:
-      - classpath:infrastructure-config.yml    

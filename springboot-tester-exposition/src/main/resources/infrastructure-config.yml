@@ -1,5 +1,9 @@
-myapp:
+infrastructure:
   feature:
     enabled: false
   business:
     threshold: 10
+  services:
+    rest:
+      postal-code:
+        endpoint: http://mon-service-prod.fr/xxxx      
