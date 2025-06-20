@@ -17,7 +17,7 @@ public class SpringBootTesterApplication {
 		SpringApplication.run(SpringBootTesterApplication.class, args);
 
 		if (LOGGER.isInfoEnabled()) {
-			LOGGER.info("Started ok 2 !!!");
+			LOGGER.info("Started ok 3 !!!");
 		}
 	}
 
