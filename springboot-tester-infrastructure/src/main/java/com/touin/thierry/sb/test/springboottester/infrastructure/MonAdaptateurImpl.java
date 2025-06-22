@@ -21,8 +21,9 @@ public class MonAdaptateurImpl implements MonAdaptateur {
 
     public void doSomething() {
         if (props.getFeatureEnabled()) {
+            
             if (LOGGER.isInfoEnabled()) {
-                LOGGER.info("features actived !");
+                LOGGER.info("features actived  !");
             }
         } else {
             if (LOGGER.isInfoEnabled()) {

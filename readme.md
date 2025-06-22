@@ -10,6 +10,7 @@ mvn spring-boot:run -Dspring-boot.run.profiles=dev -pl springboot-tester-exposit
 ### API
 
 http://localhost:8080/hello
+http://localhost:8080/pigs
 
 
 ### Actuator
@@ -28,3 +29,6 @@ rm -rv ~/.m2/repository/com/touin/thierry/sb/test/springboot-tester-*
 
 
 logging.config=classpath:logback-dev.xml
+
+
+sudo apt-get install inotify-tools
