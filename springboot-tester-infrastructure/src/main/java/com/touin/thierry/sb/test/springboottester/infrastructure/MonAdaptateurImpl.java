@@ -5,9 +5,9 @@ import com.touin.thierry.sb.test.springboottester.domain.MonAdaptateur;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.springframework.stereotype.Service;
+//import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class MonAdaptateurImpl implements MonAdaptateur {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MonAdaptateurImpl.class);
@@ -17,7 +17,7 @@ public class MonAdaptateurImpl implements MonAdaptateur {
     public MonAdaptateurImpl(MyAppPropertiesV2 props) {
         this.props = props;
         System.out.println("MonAdaptateurImpl started !!!");        
-    }
+    } 
 
     public void doSomething() {
         if (props.getFeatureEnabled()) {

@@ -2795,3 +2795,348 @@ Caused by: java.lang.ClassNotFoundException: com.touin.thierry.sb.test.springboo
 2025-06-22 21:54:48.056 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
 2025-06-22 21:54:48.071 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.156 seconds (process running for 2.461)
 2025-06-22 21:54:48.142 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 14:17:33.817 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 718 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 14:17:33.819 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 14:17:33.820 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 1 profile is active: "dev"
+2025-06-25 14:17:33.847 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 14:17:33.847 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 14:53:56.236 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 491 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 14:53:56.237 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 14:53:56.238 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 1 profile is active: "dev"
+2025-06-25 14:53:56.269 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 14:53:56.270 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 14:53:57.118 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 14:53:57.159 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 889 ms
+2025-06-25 14:53:57.612 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 14:53:57.618 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 14:53:57.660 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 14:53:57.669 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.849 seconds (process running for 2.085)
+2025-06-25 14:53:57.719 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 14:55:00.230 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 674 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 14:55:00.232 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 14:55:00.232 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 1 profile is active: "dev"
+2025-06-25 14:55:00.258 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 14:55:00.259 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 14:55:01.323 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 14:55:01.361 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1102 ms
+2025-06-25 14:55:01.808 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 14:55:01.814 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 14:55:01.859 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 14:55:01.870 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.126 seconds (process running for 2.384)
+2025-06-25 14:55:01.926 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 14:57:34.909 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 887 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 14:57:34.911 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 14:57:34.911 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 1 profile is active: "dev"
+2025-06-25 14:57:34.941 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 14:57:34.941 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 14:57:35.726 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 14:57:35.769 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 828 ms
+2025-06-25 14:57:36.210 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 14:57:36.220 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 14:57:36.259 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 14:57:36.270 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.729 seconds (process running for 1.955)
+2025-06-25 14:57:36.320 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 14:57:45.944 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 14:57:45.948 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 15:16:06.975 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 1024 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:16:06.977 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:16:06.978 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 1 profile is active: "dev"
+2025-06-25 15:16:07.006 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:16:07.006 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:16:07.934 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:16:07.977 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 971 ms
+2025-06-25 15:16:08.443 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 15:16:08.451 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 15:16:08.505 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 15:16:08.521 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.941 seconds (process running for 2.189)
+2025-06-25 15:16:08.599 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 15:17:51.627 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 15:17:51.633 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 15:18:00.934 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 1120 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:18:00.936 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:18:00.937 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 2 profiles are active: "dev", "mock"
+2025-06-25 15:18:00.964 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:18:00.964 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:18:01.739 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:18:01.784 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 819 ms
+2025-06-25 15:18:02.233 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 15:18:02.243 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 15:18:02.292 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 15:18:02.303 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.741 seconds (process running for 1.985)
+2025-06-25 15:18:02.377 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 15:19:05.160 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-25 15:19:05.162 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-25 15:19:05.196 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@4e3488d9, com.touin.thierry.sb.test.application.dto.PigDTO@38b5be, com.touin.thierry.sb.test.application.dto.PigDTO@342771c3, com.touin.thierry.sb.test.application.dto.PigDTO@42d949af]
+2025-06-25 15:19:05.198 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features actived  !
+2025-06-25 15:19:05.198 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-dev.fr/xxxx
+2025-06-25 15:19:26.802 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 15:19:26.806 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 15:27:02.516 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 1258 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:27:02.517 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:27:02.518 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 1 profile is active: "dev"
+2025-06-25 15:27:02.547 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:27:02.547 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:27:03.413 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:27:03.451 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 904 ms
+2025-06-25 15:27:03.860 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 15:27:03.869 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 15:27:03.911 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 15:27:03.922 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.775 seconds (process running for 2.019)
+2025-06-25 15:27:03.977 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 15:27:11.168 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 15:27:11.172 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 15:27:16.610 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 1352 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:27:16.612 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:27:16.612 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 2 profiles are active: "dev", "mock"
+2025-06-25 15:27:16.643 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:27:16.643 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:27:17.456 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:27:17.491 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 848 ms
+2025-06-25 15:27:17.850 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 15:27:17.857 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 15:27:17.894 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 15:27:17.904 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.754 seconds (process running for 2.01)
+2025-06-25 15:27:17.956 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 15:29:36.265 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 15:29:36.270 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 15:38:58.655 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 1492 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:38:58.656 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:38:58.657 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 1 profile is active: "dev"
+2025-06-25 15:38:58.694 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:38:58.694 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:38:59.448 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:38:59.483 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 789 ms
+2025-06-25 15:38:59.849 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 15:38:59.855 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 15:38:59.891 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 15:38:59.900 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.657 seconds (process running for 1.92)
+2025-06-25 15:38:59.954 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 15:39:04.860 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 15:39:04.865 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 15:39:11.152 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 1587 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:39:11.154 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:39:11.154 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 2 profiles are active: "dev", "mock"
+2025-06-25 15:39:11.181 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:39:11.182 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:39:11.909 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:39:11.950 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 768 ms
+2025-06-25 15:39:12.392 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 15:39:12.398 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 15:39:12.437 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 15:39:12.446 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.676 seconds (process running for 1.927)
+2025-06-25 15:39:12.499 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 15:39:53.658 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 15:39:53.662 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 15:40:07.862 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 1683 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:40:07.864 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:40:07.864 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 2 profiles are active: "dev", "mock"
+2025-06-25 15:40:07.893 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:40:07.894 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:40:08.716 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:40:08.764 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 870 ms
+2025-06-25 15:40:09.136 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 15:40:09.143 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 15:40:09.185 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 15:40:09.195 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.718 seconds (process running for 1.947)
+2025-06-25 15:40:09.248 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 15:40:14.342 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 15:40:14.346 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 15:40:23.724 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 1823 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:40:23.726 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:40:23.727 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 2 profiles are active: "dev", "mock"
+2025-06-25 15:40:23.780 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:40:23.780 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:40:24.722 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:40:24.761 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 980 ms
+2025-06-25 15:40:24.890 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pigController' defined in file [/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes/com/touin/thierry/sb/test/springboottester/exposition/PigController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'pigServiceImpl': Unsatisfied dependency expressed through field 'pigBizService': Error creating bean with name 'pigBizServiceImpl': Unsatisfied dependency expressed through field 'monAdaptateur': No qualifying bean of type 'com.touin.thierry.sb.test.springboottester.domain.MonAdaptateur' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-06-25 15:40:24.910 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-25 15:40:24.935 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field monAdaptateur in com.touin.thierry.sb.test.springboottester.domain.PigBizServiceImpl required a bean of type 'com.touin.thierry.sb.test.springboottester.domain.MonAdaptateur' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.touin.thierry.sb.test.springboottester.domain.MonAdaptateur' in your configuration.
+
+2025-06-25 15:42:44.048 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 1943 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:42:44.049 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:42:44.049 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 2 profiles are active: "dev", "mock"
+2025-06-25 15:42:44.078 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:42:44.078 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:42:44.801 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:42:44.829 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 750 ms
+2025-06-25 15:42:44.938 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pigController' defined in file [/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes/com/touin/thierry/sb/test/springboottester/exposition/PigController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'pigServiceImpl': Unsatisfied dependency expressed through field 'pigBizService': Error creating bean with name 'pigBizServiceImpl': Unsatisfied dependency expressed through field 'monAdaptateur': No qualifying bean of type 'com.touin.thierry.sb.test.springboottester.domain.MonAdaptateur' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-06-25 15:42:44.951 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-25 15:42:44.966 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field monAdaptateur in com.touin.thierry.sb.test.springboottester.domain.PigBizServiceImpl required a bean of type 'com.touin.thierry.sb.test.springboottester.domain.MonAdaptateur' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.touin.thierry.sb.test.springboottester.domain.MonAdaptateur' in your configuration.
+
+2025-06-25 15:43:08.631 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 2063 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:43:08.633 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:43:08.633 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 2 profiles are active: "dev", "mock"
+2025-06-25 15:43:08.666 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:43:08.666 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:43:09.623 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:43:09.664 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 998 ms
+2025-06-25 15:43:10.118 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 15:43:10.126 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 15:43:10.171 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 15:43:10.182 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.983 seconds (process running for 2.239)
+2025-06-25 15:43:10.236 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 15:43:12.169 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 15:43:12.175 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 15:43:47.865 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 2201 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:43:47.867 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:43:47.867 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 1 profile is active: "dev"
+2025-06-25 15:43:47.895 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:43:47.895 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:43:48.617 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:43:48.653 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 757 ms
+2025-06-25 15:43:49.030 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 15:43:49.036 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 15:43:49.072 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 15:43:49.081 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.637 seconds (process running for 1.89)
+2025-06-25 15:43:49.127 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 15:43:53.581 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 15:43:53.585 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 15:43:58.361 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 2296 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:43:58.362 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:43:58.363 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 2 profiles are active: "dev", "mock"
+2025-06-25 15:43:58.395 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:43:58.395 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:43:59.258 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:43:59.293 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 898 ms
+2025-06-25 15:43:59.385 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pigController' defined in file [/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes/com/touin/thierry/sb/test/springboottester/exposition/PigController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'pigServiceImpl': Unsatisfied dependency expressed through field 'pigBizService': Error creating bean with name 'pigBizServiceImpl': Unsatisfied dependency expressed through field 'monAdaptateur': No qualifying bean of type 'com.touin.thierry.sb.test.springboottester.domain.MonAdaptateur' available: expected single matching bean but found 2: myService,myMonAdaptateurMockImpl
+2025-06-25 15:43:59.398 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-25 15:43:59.410 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field monAdaptateur in com.touin.thierry.sb.test.springboottester.domain.PigBizServiceImpl required a single bean, but 2 were found:
+	- myService: defined by method 'myService' in class path resource [com/touin/thierry/sb/test/springboottester/infrastructure/InfraConfiguration.class]
+	- myMonAdaptateurMockImpl: defined by method 'myMonAdaptateurMockImpl' in class path resource [com/touin/thierry/sb/test/springboottester/infrastructure/InfraMockConfiguration.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-6.1-Release-Notes#parameter-name-retention)
+
+
+2025-06-25 15:54:13.007 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 2416 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:54:13.008 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:54:13.009 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 1 profile is active: "dev"
+2025-06-25 15:54:13.037 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:54:13.037 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:54:13.801 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:54:13.853 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 816 ms
+2025-06-25 15:54:14.291 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 15:54:14.304 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 15:54:14.346 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 15:54:14.358 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.755 seconds (process running for 2.028)
+2025-06-25 15:54:14.413 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 15:54:23.928 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 15:54:23.931 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 15:54:29.873 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 2511 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 15:54:29.875 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 15:54:29.876 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 2 profiles are active: "dev", "mock"
+2025-06-25 15:54:29.939 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 15:54:29.939 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 15:54:30.911 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 15:54:30.945 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1005 ms
+2025-06-25 15:54:31.341 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 15:54:31.349 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 15:54:31.393 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 15:54:31.405 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.96 seconds (process running for 2.377)
+2025-06-25 15:54:31.457 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 15:54:38.990 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-25 15:54:38.993 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-06-25 15:54:39.021 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@6d1798eb, com.touin.thierry.sb.test.application.dto.PigDTO@685057b0, com.touin.thierry.sb.test.application.dto.PigDTO@7e346736, com.touin.thierry.sb.test.application.dto.PigDTO@a4cc948]
+2025-06-25 15:54:39.022 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurMockImpl - doSomething()
+2025-06-25 16:03:00.161 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 16:03:00.173 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 16:03:11.719 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 2651 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 16:03:11.720 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 16:03:11.721 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 1 profile is active: "dev"
+2025-06-25 16:03:11.750 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 16:03:11.750 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 16:03:12.641 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 16:03:12.673 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 922 ms
+2025-06-25 16:03:13.058 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 16:03:13.066 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 16:03:13.108 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 16:03:13.118 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.761 seconds (process running for 1.996)
+2025-06-25 16:03:13.172 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 16:03:38.532 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-25 16:03:38.534 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-06-25 16:03:44.379 [http-nio-8080-exec-2] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@4e5b24b5, com.touin.thierry.sb.test.application.dto.PigDTO@2cb3c605, com.touin.thierry.sb.test.application.dto.PigDTO@5257c2e1, com.touin.thierry.sb.test.application.dto.PigDTO@305405cc]
+2025-06-25 16:03:44.380 [http-nio-8080-exec-2] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features actived  !
+2025-06-25 16:03:44.381 [http-nio-8080-exec-2] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-dev.fr/xxxx
+2025-06-25 16:03:50.457 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 16:03:50.461 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 16:03:56.667 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 2745 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 16:03:56.669 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 16:03:56.670 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 2 profiles are active: "dev", "mock"
+2025-06-25 16:03:56.698 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 16:03:56.699 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 16:03:57.608 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 16:03:57.637 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 934 ms
+2025-06-25 16:03:57.746 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pigController' defined in file [/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes/com/touin/thierry/sb/test/springboottester/exposition/PigController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'pigServiceImpl': Unsatisfied dependency expressed through field 'pigBizService': Error creating bean with name 'pigBizServiceImpl': Unsatisfied dependency expressed through field 'monAdaptateur': No qualifying bean of type 'com.touin.thierry.sb.test.springboottester.domain.MonAdaptateur' available: expected single matching bean but found 2: myService,myMonAdaptateurMockImpl
+2025-06-25 16:03:57.760 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-25 16:03:57.772 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field monAdaptateur in com.touin.thierry.sb.test.springboottester.domain.PigBizServiceImpl required a single bean, but 2 were found:
+	- myService: defined by method 'myService' in class path resource [com/touin/thierry/sb/test/springboottester/infrastructure/InfraConfiguration.class]
+	- myMonAdaptateurMockImpl: defined by method 'myMonAdaptateurMockImpl' in class path resource [com/touin/thierry/sb/test/springboottester/infrastructure/InfraMockConfiguration.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-6.1-Release-Notes#parameter-name-retention)
+
+

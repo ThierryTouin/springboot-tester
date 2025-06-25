@@ -5,6 +5,8 @@ mvn spring-boot:run -pl springboot-tester-exposition
 ### avec profil dev
 mvn spring-boot:run -Dspring-boot.run.profiles=dev -pl springboot-tester-exposition
 
+### avec profil dev + mock
+mvn spring-boot:run -Dspring-boot.run.profiles=dev,mock -pl springboot-tester-exposition
 
 ## URL
 ### API

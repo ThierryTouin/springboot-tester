@@ -14,9 +14,18 @@
     <module>springboot-tester-domain</module>
     <module>springboot-tester-application</module>
     <module>springboot-tester-infrastructure</module>
+    <!-- module infrastructure-mock sera activé uniquement par profil Maven -->
     <module>springboot-tester-exposition</module>
   </modules>
 
+  <profiles>
+    <profile>
+      <id>mock</id>
+      <modules>
+        <module>springboot-tester-infrastructure-mock</module>
+      </modules>
+    </profile>
+  </profiles>
 
   <properties>
     <java.version>17</java.version>
