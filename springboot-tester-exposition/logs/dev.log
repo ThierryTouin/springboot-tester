@@ -3140,3 +3140,95 @@ You may need to update both your build tool settings as well as your IDE.
 (See https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-6.1-Release-Notes#parameter-name-retention)
 
 
+2025-06-25 16:09:56.155 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 2865 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 16:09:56.157 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 16:09:56.157 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 1 profile is active: "dev"
+2025-06-25 16:09:56.186 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 16:09:56.187 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 16:09:56.938 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 16:09:56.982 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 794 ms
+2025-06-25 16:09:57.445 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-25 16:09:57.453 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-25 16:09:57.497 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-25 16:09:57.506 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.714 seconds (process running for 1.952)
+2025-06-25 16:09:57.559 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-25 16:10:14.599 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-25 16:10:14.603 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-25 16:10:20.448 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 2959 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-25 16:10:20.450 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-25 16:10:20.451 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 2 profiles are active: "dev", "mock"
+2025-06-25 16:10:20.489 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-25 16:10:20.489 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-25 16:10:21.291 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-25 16:10:21.320 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 831 ms
+2025-06-25 16:10:21.417 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pigController' defined in file [/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes/com/touin/thierry/sb/test/springboottester/exposition/PigController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'pigServiceImpl': Unsatisfied dependency expressed through field 'pigBizService': Error creating bean with name 'pigBizServiceImpl': Unsatisfied dependency expressed through field 'monAdaptateur': No qualifying bean of type 'com.touin.thierry.sb.test.springboottester.domain.MonAdaptateur' available: expected single matching bean but found 2: myService,myMonAdaptateurMockImpl
+2025-06-25 16:10:21.431 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-25 16:10:21.447 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field monAdaptateur in com.touin.thierry.sb.test.springboottester.domain.PigBizServiceImpl required a single bean, but 2 were found:
+	- myService: defined by method 'myService' in class path resource [com/touin/thierry/sb/test/springboottester/infrastructure/InfraConfiguration.class]
+	- myMonAdaptateurMockImpl: defined by method 'myMonAdaptateurMockImpl' in class path resource [com/touin/thierry/sb/test/springboottester/infrastructure/InfraMockConfiguration.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-6.1-Release-Notes#parameter-name-retention)
+
+
+2025-06-27 12:13:46.527 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 240 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-06-27 12:13:46.529 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-27 12:13:46.529 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 1 profile is active: "dev"
+2025-06-27 12:13:46.569 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-27 12:13:46.569 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-27 12:13:47.682 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-27 12:13:47.722 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1153 ms
+2025-06-27 12:13:48.181 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-27 12:13:48.189 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-06-27 12:13:48.251 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-27 12:13:48.263 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.232 seconds (process running for 2.563)
+2025-06-27 12:13:48.368 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-06-27 12:14:13.597 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-27 12:14:13.600 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-06-27 12:14:13.631 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@43fae72b, com.touin.thierry.sb.test.application.dto.PigDTO@17a535b0, com.touin.thierry.sb.test.application.dto.PigDTO@28323b77, com.touin.thierry.sb.test.application.dto.PigDTO@6579c7dd]
+2025-06-27 12:14:13.632 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features actived  !
+2025-06-27 12:14:13.632 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-dev.fr/xxxx
+2025-06-27 12:14:13.633 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-06-27 12:14:13.735 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-06-27 12:14:13.735 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-06-27 12:14:13.836 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-06-27 12:14:27.097 [http-nio-8080-exec-4] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@5d7925b0, com.touin.thierry.sb.test.application.dto.PigDTO@5946aac7, com.touin.thierry.sb.test.application.dto.PigDTO@1c442f8b, com.touin.thierry.sb.test.application.dto.PigDTO@39d2e6cd]
+2025-06-27 12:14:27.097 [http-nio-8080-exec-4] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features actived  !
+2025-06-27 12:14:27.097 [http-nio-8080-exec-4] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-dev.fr/xxxx
+2025-06-27 12:14:27.097 [http-nio-8080-exec-4] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Returned from cache for id titi
+2025-06-27 12:14:27.098 [http-nio-8080-exec-4] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-06-27 12:14:27.098 [http-nio-8080-exec-4] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Returned from cache for id toto
+2025-06-27 12:14:27.098 [http-nio-8080-exec-4] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-06-27 12:20:28.808 [http-nio-8080-exec-8] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@4f8f62c9, com.touin.thierry.sb.test.application.dto.PigDTO@4bb0efe0, com.touin.thierry.sb.test.application.dto.PigDTO@eb268f2, com.touin.thierry.sb.test.application.dto.PigDTO@b5b01b0]
+2025-06-27 12:20:28.808 [http-nio-8080-exec-8] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features actived  !
+2025-06-27 12:20:28.808 [http-nio-8080-exec-8] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-dev.fr/xxxx
+2025-06-27 12:20:28.809 [http-nio-8080-exec-8] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-06-27 12:20:28.909 [http-nio-8080-exec-8] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-06-27 12:20:28.910 [http-nio-8080-exec-8] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-06-27 12:20:29.010 [http-nio-8080-exec-8] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-06-27 12:20:38.915 [http-nio-8080-exec-10] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@7b3f8aad, com.touin.thierry.sb.test.application.dto.PigDTO@7f001112, com.touin.thierry.sb.test.application.dto.PigDTO@3a028096, com.touin.thierry.sb.test.application.dto.PigDTO@c9fd6de]
+2025-06-27 12:20:38.915 [http-nio-8080-exec-10] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features actived  !
+2025-06-27 12:20:38.916 [http-nio-8080-exec-10] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-dev.fr/xxxx
+2025-06-27 12:20:38.916 [http-nio-8080-exec-10] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Returned from cache for id titi
+2025-06-27 12:20:38.916 [http-nio-8080-exec-10] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-06-27 12:20:38.916 [http-nio-8080-exec-10] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Returned from cache for id toto
+2025-06-27 12:20:38.916 [http-nio-8080-exec-10] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-06-27 12:21:16.177 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-27 12:21:16.184 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete

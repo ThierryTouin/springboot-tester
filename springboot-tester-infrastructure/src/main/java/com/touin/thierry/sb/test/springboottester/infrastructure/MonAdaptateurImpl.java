@@ -1,6 +1,8 @@
 package com.touin.thierry.sb.test.springboottester.infrastructure;
 
 import com.touin.thierry.sb.test.springboottester.domain.MonAdaptateur;
+import com.touin.thierry.sb.test.springboottester.infrastructure.externalservice.ExternalDto;
+import com.touin.thierry.sb.test.springboottester.infrastructure.externalservice.ExternalServicePort;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,8 +16,11 @@ public class MonAdaptateurImpl implements MonAdaptateur {
 
     private final MyAppPropertiesV2 props;
 
-    public MonAdaptateurImpl(MyAppPropertiesV2 props) {
+    private final ExternalServicePort externalServicePort;
+
+    public MonAdaptateurImpl(MyAppPropertiesV2 props,ExternalServicePort externalServicePort) {
         this.props = props;
+        this.externalServicePort = externalServicePort;
         System.out.println("MonAdaptateurImpl started !!!");        
     } 
 
@@ -31,10 +36,18 @@ public class MonAdaptateurImpl implements MonAdaptateur {
             }
         }
 
-            if (LOGGER.isInfoEnabled()) {
-                LOGGER.info("PostalCodeServiceEndpoint:" + props.getPostalCodeServiceEndpoint());
-            }
+        if (LOGGER.isInfoEnabled()) {
+            LOGGER.info("PostalCodeServiceEndpoint:" + props.getPostalCodeServiceEndpoint());
+        }
 
+        ExternalDto externalDtoTiti = externalServicePort.getData("titi");
+        if (LOGGER.isInfoEnabled()) {
+            LOGGER.info("externalDtoTiti:" + externalDtoTiti.value());
+        }
+        ExternalDto externalDtoToto = externalServicePort.getData("toto");
+        if (LOGGER.isInfoEnabled()) {
+            LOGGER.info("externalDtoToto:" + externalDtoToto.value());
+        }
     }
 
 }
