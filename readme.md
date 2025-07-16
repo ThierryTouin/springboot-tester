@@ -14,6 +14,9 @@ mvn spring-boot:run -Dspring-boot.run.profiles=dev,mock -pl springboot-tester-ex
 http://localhost:8080/hello
 http://localhost:8080/pigs
 
+### Swagger
+http://localhost:8080/swagger-ui/index.html
+
 
 ### Actuator
 - Root : http://localhost:8080/actuator
