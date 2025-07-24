@@ -34,6 +34,11 @@ rm -rv ~/.m2/repository/com/touin/thierry/sb/test/springboot-tester-*
 
 
 logging.config=classpath:logback-dev.xml
-
+mvn clean verify
 
 sudo apt-get install inotify-tools
+
+
+
+mvn clean verify
+mvn clean verify -Pmock
