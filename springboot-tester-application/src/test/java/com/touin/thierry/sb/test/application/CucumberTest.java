@@ -8,7 +8,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
   plugin = {"pretty"},
   features = "src/test/resources/features",
-  glue = "com.touin.thierry.sb.test.application.steps"
+  //glue = "com.touin.thierry.sb.test.application.steps",
+  glue = {
+  "com.touin.thierry.sb.test.springboottester.config",
+  "com.touin.thierry.sb.test.application.steps"
+}
+
 )
 public class CucumberTest {
 }

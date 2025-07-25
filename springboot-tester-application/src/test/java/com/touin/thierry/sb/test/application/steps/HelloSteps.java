@@ -1,6 +1,6 @@
 package com.touin.thierry.sb.test.application.steps;
 
-import com.touin.thierry.sb.test.application.HelloWorldService;
+import com.touin.thierry.sb.test.application.service.HelloWorldService;
 import io.cucumber.java.en.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

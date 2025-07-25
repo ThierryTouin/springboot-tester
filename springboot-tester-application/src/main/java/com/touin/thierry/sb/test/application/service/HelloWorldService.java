@@ -1,6 +1,6 @@
 package com.touin.thierry.sb.test.application.service;
 
-import com.touin.thierry.sb.test.domain.HelloWorldUseCase;
+import com.touin.thierry.sb.test.springboottester.domain.HelloWorldUseCase;
 import org.springframework.stereotype.Service;
 
 @Service

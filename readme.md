@@ -1,5 +1,8 @@
 ## Build and Start
-mvn clean install
+mvn clean install 
+mvn clean install -DskipTests
+mvn clean install -DskipTests -Pmock
+
 mvn spring-boot:run -pl springboot-tester-exposition
 
 ### avec profil dev
