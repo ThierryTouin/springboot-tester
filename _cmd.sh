@@ -7,8 +7,10 @@ function display_help {
   echo
   echo "Build Commands:"
   echo "  build             => mvn clean install"
-  echo "  build-skip        => mvn clean install -DskipTests"
-  echo "  build-mock        => mvn clean install -DskipTests -Pmock"
+  echo "  build-mock        => mvn clean install -Pmock -Dspring.profiles.active=mock."
+  echo "                       (le but est de builder et d'executer les TU avec le profil mock)"
+  echo "                       (-Dspring.profiles.active=mock est ajouté pour ue cucumber démarre spring avec le profil mock)"
+  echo "  build-all-skip    => mvn clean install -DskipTests -Pmock"
   echo
   echo "Test Commands:"
   echo "  test              => mvn clean verify"
@@ -33,10 +35,10 @@ case "$1" in
   build)
     mvn clean install
     ;;
-  build-skip)
-    mvn clean install -DskipTests
-    ;;
   build-mock)
+    mvn clean install -Pmock -Dspring.profiles.active=mock
+    ;;
+  build-all-skip)
     mvn clean install -DskipTests -Pmock
     ;;
   test)

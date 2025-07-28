@@ -213,3 +213,38 @@ Consider defining a bean of type 'com.touin.thierry.sb.test.springboottester.dom
 2025-07-28 13:56:19.547 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.437 seconds (process running for 3.371)
 2025-07-28 13:56:20.256 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - sayHello()
 2025-07-28 13:56:20.256 [main] INFO  c.t.t.s.t.s.i.HelloWorldMockAdapter - sayHello()
+2025-07-28 15:33:00.954 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.8 with PID 490 (started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-07-28 15:33:00.955 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - No active profile set, falling back to 1 default profile: "default"
+2025-07-28 15:33:02.358 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-07-28 15:33:02.907 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-07-28 15:33:02.972 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.441 seconds (process running for 3.335)
+2025-07-28 15:33:03.736 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - sayHello()
+2025-07-28 15:33:03.736 [main] INFO  c.t.t.s.t.s.i.HelloWorldRealAdapter - sayHello()
+2025-07-28 15:33:50.644 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.8 with PID 653 (started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-07-28 15:33:50.645 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - The following 1 profile is active: "mock"
+2025-07-28 15:33:52.035 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-07-28 15:33:52.623 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-07-28 15:33:52.692 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.433 seconds (process running for 3.261)
+2025-07-28 15:33:53.353 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - sayHello()
+2025-07-28 15:33:53.354 [main] INFO  c.t.t.s.t.s.i.HelloWorldMockAdapter - sayHello()
+2025-07-28 15:41:42.296 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.8 with PID 777 (started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-07-28 15:41:42.298 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - No active profile set, falling back to 1 default profile: "default"
+2025-07-28 15:41:43.677 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-07-28 15:41:44.246 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-07-28 15:41:44.309 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.482 seconds (process running for 3.394)
+2025-07-28 15:41:45.084 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - sayHello()
+2025-07-28 15:41:45.084 [main] INFO  c.t.t.s.t.s.i.HelloWorldRealAdapter - sayHello()
+2025-07-28 15:43:47.234 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.8 with PID 894 (started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-07-28 15:43:47.235 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - No active profile set, falling back to 1 default profile: "default"
+2025-07-28 15:43:48.578 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-07-28 15:43:49.171 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-07-28 15:43:49.258 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.433 seconds (process running for 3.35)
+2025-07-28 15:43:49.960 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - sayHello()
+2025-07-28 15:43:49.961 [main] INFO  c.t.t.s.t.s.i.HelloWorldRealAdapter - sayHello()
+2025-07-28 15:44:02.951 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.8 with PID 1010 (started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-07-28 15:44:02.952 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - The following 1 profile is active: "mock"
+2025-07-28 15:44:04.240 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-07-28 15:44:04.781 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-07-28 15:44:04.842 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.315 seconds (process running for 3.254)
+2025-07-28 15:44:05.526 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - sayHello()
+2025-07-28 15:44:05.526 [main] INFO  c.t.t.s.t.s.i.HelloWorldMockAdapter - sayHello()
