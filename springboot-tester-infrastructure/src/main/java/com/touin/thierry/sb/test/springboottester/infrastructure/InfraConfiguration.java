@@ -17,4 +17,10 @@ public class InfraConfiguration {
     public MonAdaptateur myService(MyAppPropertiesV2 props, ExternalServicePort externalServicePort) {
         return new MonAdaptateurImpl(props, externalServicePort);
     }
+
+    @Bean
+    public HelloWorldRealAdapter myHelloWorldRealAdapter(MyAppPropertiesV2 props, ExternalServicePort externalServicePort) {
+        return new HelloWorldRealAdapter();
+    }
+
 }

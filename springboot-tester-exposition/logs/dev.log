@@ -3232,3 +3232,48 @@ You may need to update both your build tool settings as well as your IDE.
 2025-06-27 12:20:38.916 [http-nio-8080-exec-10] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
 2025-06-27 12:21:16.177 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
 2025-06-27 12:21:16.184 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-28 13:19:43.171 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.8 with PID 4600 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-07-28 13:19:43.173 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-07-28 13:19:43.173 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 1 profile is active: "dev"
+2025-07-28 13:19:43.209 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-28 13:19:43.210 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-28 13:19:44.252 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-07-28 13:19:44.300 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1090 ms
+2025-07-28 13:19:44.553 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-07-28 13:19:44.903 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-07-28 13:19:44.911 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-07-28 13:19:44.961 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-07-28 13:19:44.976 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.273 seconds (process running for 2.532)
+2025-07-28 13:19:45.032 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-07-28 13:20:47.367 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-28 13:20:47.369 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-28 13:20:59.440 [http-nio-8080-exec-3] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@53ba9a10, com.touin.thierry.sb.test.application.dto.PigDTO@41290461, com.touin.thierry.sb.test.application.dto.PigDTO@398fd07d, com.touin.thierry.sb.test.application.dto.PigDTO@2b89711f]
+2025-07-28 13:20:59.442 [http-nio-8080-exec-3] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features actived  !
+2025-07-28 13:20:59.442 [http-nio-8080-exec-3] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-dev.fr/xxxx
+2025-07-28 13:20:59.442 [http-nio-8080-exec-3] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-07-28 13:20:59.546 [http-nio-8080-exec-3] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-07-28 13:20:59.547 [http-nio-8080-exec-3] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-07-28 13:20:59.648 [http-nio-8080-exec-3] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-07-28 13:21:10.166 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-28 13:21:10.171 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-28 13:21:17.812 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.8 with PID 4709 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-07-28 13:21:17.813 [restartedMain] DEBUG c.t.t.s.t.s.SpringBootTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-07-28 13:21:17.814 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - The following 2 profiles are active: "dev", "mock"
+2025-07-28 13:21:17.852 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-28 13:21:17.852 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-28 13:21:18.918 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-07-28 13:21:18.960 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1108 ms
+2025-07-28 13:21:19.222 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-07-28 13:21:19.613 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-07-28 13:21:19.621 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-07-28 13:21:19.677 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-07-28 13:21:19.693 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.345 seconds (process running for 2.622)
+2025-07-28 13:21:19.760 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-07-28 13:21:25.251 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-28 13:21:25.253 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-28 13:21:25.295 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@74cbf9d9, com.touin.thierry.sb.test.application.dto.PigDTO@1c9cc448, com.touin.thierry.sb.test.application.dto.PigDTO@42bfa3e5, com.touin.thierry.sb.test.application.dto.PigDTO@67174b49]
+2025-07-28 13:21:25.296 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurMockImpl - doSomething()
+2025-07-28 13:21:44.429 [http-nio-8080-exec-3] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@166e25b9, com.touin.thierry.sb.test.application.dto.PigDTO@1251b3ac, com.touin.thierry.sb.test.application.dto.PigDTO@57532f82, com.touin.thierry.sb.test.application.dto.PigDTO@16a628c]
+2025-07-28 13:21:44.429 [http-nio-8080-exec-3] INFO  c.t.t.s.t.s.i.MonAdaptateurMockImpl - doSomething()
+2025-07-28 13:22:17.316 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-28 13:22:17.320 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete

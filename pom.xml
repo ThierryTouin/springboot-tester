@@ -14,16 +14,46 @@
     <module>springboot-tester-domain</module>
     <module>springboot-tester-application</module>
     <module>springboot-tester-infrastructure</module>
-    <!-- module infrastructure-mock sera activé uniquement par profil Maven -->
+    <module>springboot-tester-infrastructure-mock</module>
     <module>springboot-tester-exposition</module>
   </modules>
 
   <profiles>
     <profile>
+      <id>default</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>      
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <configuration>
+              <includes>
+                <include>**/CucumberDefaultTest.java</include>
+              </includes>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>      
+    </profile>  
+    <profile>
       <id>mock</id>
       <modules>
         <module>springboot-tester-infrastructure-mock</module>
       </modules>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <configuration>
+              <includes>
+                <include>**/CucumberMockTest.java</include>
+              </includes>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>      
     </profile>
   </profiles>
 

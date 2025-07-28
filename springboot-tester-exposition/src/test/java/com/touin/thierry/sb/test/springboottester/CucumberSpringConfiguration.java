@@ -1,4 +1,4 @@
-package com.touin.thierry.sb.test.application;
+package com.touin.thierry.sb.test.springboottester;
 
 import io.cucumber.spring.CucumberContextConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;

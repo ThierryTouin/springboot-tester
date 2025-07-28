@@ -1,9 +1,11 @@
-package com.touin.thierry.sb.test.application.steps;
+package com.touin.thierry.sb.test.springboottester.steps;
 
-import com.touin.thierry.sb.test.application.service.HelloWorldService;
 import io.cucumber.java.en.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+
+import com.touin.thierry.sb.test.application.service.HelloWorldService;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

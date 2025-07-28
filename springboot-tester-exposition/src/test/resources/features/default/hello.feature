@@ -4,3 +4,5 @@ Feature: HelloWorld Service
     Given le service Hello est prêt
     When j'exécute le service Hello
     Then le résultat est "Hello from real adapter"
+
+
