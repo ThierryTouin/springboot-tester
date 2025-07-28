@@ -171,3 +171,45 @@
 2025-07-28 13:16:02.826 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
 2025-07-28 13:16:03.391 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
 2025-07-28 13:16:03.455 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.426 seconds (process running for 3.319)
+2025-07-28 13:46:50.651 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.8 with PID 127 (started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-07-28 13:46:50.653 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - No active profile set, falling back to 1 default profile: "default"
+2025-07-28 13:46:51.865 [main] WARN  o.s.w.c.s.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldService' defined in URL [jar:file:/home/user1/app/springboot-tester/springboot-tester-application/target/springboot-tester-application-0.0.1-SNAPSHOT.jar!/com/touin/thierry/sb/test/application/service/HelloWorldService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.touin.thierry.sb.test.springboottester.domain.HelloWorldUseCase' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-07-28 13:46:51.911 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-28 13:46:51.935 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.touin.thierry.sb.test.application.service.HelloWorldService required a bean of type 'com.touin.thierry.sb.test.springboottester.domain.HelloWorldUseCase' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.touin.thierry.sb.test.springboottester.domain.HelloWorldUseCase' in your configuration.
+
+2025-07-28 13:55:41.781 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.8 with PID 130 (started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-07-28 13:55:41.783 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - No active profile set, falling back to 1 default profile: "default"
+2025-07-28 13:55:43.153 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-07-28 13:55:43.703 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-07-28 13:55:43.764 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.388 seconds (process running for 3.309)
+2025-07-28 13:55:44.547 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - sayHello()
+2025-07-28 13:55:44.547 [main] INFO  c.t.t.s.t.s.i.HelloWorldRealAdapter - sayHello()
+2025-07-28 13:56:03.501 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.8 with PID 254 (started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-07-28 13:56:03.502 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - No active profile set, falling back to 1 default profile: "default"
+2025-07-28 13:56:04.952 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-07-28 13:56:05.509 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-07-28 13:56:05.574 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.477 seconds (process running for 3.349)
+2025-07-28 13:56:06.403 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - sayHello()
+2025-07-28 13:56:06.403 [main] INFO  c.t.t.s.t.s.i.HelloWorldRealAdapter - sayHello()
+2025-07-28 13:56:17.561 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.8 with PID 372 (started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-07-28 13:56:17.563 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - The following 1 profile is active: "mock"
+2025-07-28 13:56:18.939 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-07-28 13:56:19.479 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-07-28 13:56:19.547 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.437 seconds (process running for 3.371)
+2025-07-28 13:56:20.256 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - sayHello()
+2025-07-28 13:56:20.256 [main] INFO  c.t.t.s.t.s.i.HelloWorldMockAdapter - sayHello()
