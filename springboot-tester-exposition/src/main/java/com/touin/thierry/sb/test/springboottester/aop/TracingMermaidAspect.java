@@ -43,39 +43,19 @@ public class TracingMermaidAspect {
         String n = pkg.toLowerCase(Locale.ROOT);
 
         // --- mapping principal (hexagonal) ---
-        if (n.contains(".exposition.") || n.endsWith(".exposition")
-                || n.contains(".web.") || n.endsWith(".web")
-                || n.contains(".api.") || n.endsWith(".api")
-                || n.contains(".controller.") || n.endsWith(".controller")) {
+        if (n.contains(".exposition.") || n.endsWith(".exposition")) {
             return "exposition";
         }
 
-        if (n.contains(".application.") || n.endsWith(".application")
-                || n.contains(".app.") || n.endsWith(".app")
-                || n.contains(".usecase.") || n.endsWith(".usecase")
-                || n.contains(".usecases.") || n.endsWith(".usecases")
-                || n.contains(".service.") || n.endsWith(".service")) {
+        if (n.contains(".application.") || n.endsWith(".application")) {
             return "application";
         }
 
-        if (n.contains(".domain.") || n.endsWith(".domain")
-                || n.contains(".domaine.") || n.endsWith(".domaine")
-                || n.contains(".model.") || n.endsWith(".model")
-                || n.contains(".core.") || n.endsWith(".core")
-                || n.contains(".aggregate.") || n.endsWith(".aggregate")
-                || n.contains(".entities.") || n.endsWith(".entities")) {
+        if (n.contains(".domain.") || n.endsWith(".domain")) {
             return "domain";
         }
 
-        if (n.contains(".infrastructure.") || n.endsWith(".infrastructure")
-                || n.contains(".infra.") || n.endsWith(".infra")
-                || n.contains(".adapter.") || n.endsWith(".adapter")
-                || n.contains(".adapters.") || n.endsWith(".adapters")
-                || n.contains(".repository.") || n.endsWith(".repository")
-                || n.contains(".client.") || n.endsWith(".client")
-                || n.contains(".external.") || n.endsWith(".external")
-                || n.contains(".configuration.") || n.endsWith(".configuration")
-                || n.contains(".config.") || n.endsWith(".config")) {
+        if (n.contains(".infrastructure.") || n.endsWith(".infrastructure")) {
             return "infrastructure";
         }
 
