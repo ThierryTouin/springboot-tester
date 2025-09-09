@@ -311,3 +311,277 @@ Consider defining a bean of type 'com.touin.thierry.sb.test.springboottester.dom
 2025-09-04 08:07:38.030 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.928 seconds (process running for 4.018)
 2025-09-04 08:07:39.042 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - sayHello()
 2025-09-04 08:07:39.043 [main] INFO  c.t.t.s.t.s.i.HelloWorldRealAdapter - sayHello()
+2025-09-09 08:46:06.291 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 202 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-09-09 08:46:06.295 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-09 08:46:06.337 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-09 08:46:06.337 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-09 08:46:07.529 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-09 08:46:07.546 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-09 08:46:07.548 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-09 08:46:07.549 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-09 08:46:07.590 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-09 08:46:07.591 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1253 ms
+2025-09-09 08:46:07.883 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-09 08:46:08.315 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-09 08:46:08.322 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-09-09 08:46:08.364 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-09 08:46:08.379 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-09 08:46:08.390 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.583 seconds (process running for 2.932)
+2025-09-09 08:46:08.490 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-09-09 08:47:09.253 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-09 08:47:09.253 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-09 08:47:09.266 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2025-09-09 08:51:07.747 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-09 08:51:07.753 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-09 08:51:14.107 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 300 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-09-09 08:51:14.121 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-09 08:51:14.261 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-09 08:51:14.261 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-09 08:51:16.756 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-09 08:51:16.772 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-09 08:51:16.775 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-09 08:51:16.777 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-09 08:51:16.824 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-09 08:51:16.824 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2562 ms
+2025-09-09 08:51:17.261 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-09 08:51:17.741 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-09 08:51:17.749 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-09-09 08:51:17.798 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-09 08:51:17.809 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-09 08:51:17.820 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 4.471 seconds (process running for 4.838)
+2025-09-09 08:51:17.877 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-09-09 08:51:21.823 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-09 08:51:21.823 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-09 08:51:21.825 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-09 08:51:42.135 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-09 08:51:42.139 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-09 08:51:47.497 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 395 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-09-09 08:51:47.499 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-09 08:51:47.537 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-09 08:51:47.537 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-09 08:51:48.597 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-09 08:51:48.607 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-09 08:51:48.609 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-09 08:51:48.609 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-09 08:51:48.646 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-09 08:51:48.646 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1109 ms
+2025-09-09 08:51:49.124 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-09 08:51:49.531 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-09 08:51:49.538 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-09-09 08:51:49.581 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-09 08:51:49.592 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-09 08:51:49.604 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.5 seconds (process running for 2.769)
+2025-09-09 08:51:49.671 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-09-09 08:51:57.080 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-09 08:51:57.081 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-09 08:51:57.083 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-09 08:52:25.425 [http-nio-8080-exec-2] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@2b48ac2a, com.touin.thierry.sb.test.application.dto.PigDTO@41270a1, com.touin.thierry.sb.test.application.dto.PigDTO@1097b9ac, com.touin.thierry.sb.test.application.dto.PigDTO@60bc9d6c]
+2025-09-09 08:52:25.429 [http-nio-8080-exec-2] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features NOT actived !
+2025-09-09 08:52:25.430 [http-nio-8080-exec-2] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-prod.fr/xxxx
+2025-09-09 08:52:25.430 [http-nio-8080-exec-2] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-09-09 08:52:25.533 [http-nio-8080-exec-2] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-09-09 08:52:25.534 [http-nio-8080-exec-2] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-09-09 08:52:25.635 [http-nio-8080-exec-2] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-09-09 08:56:49.428 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-09 08:56:49.432 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-09 08:56:55.042 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 494 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-09-09 08:56:55.044 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-09 08:56:55.101 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-09 08:56:55.101 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-09 08:56:56.222 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-09 08:56:56.233 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-09 08:56:56.235 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-09 08:56:56.235 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-09 08:56:56.270 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-09 08:56:56.270 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1169 ms
+2025-09-09 08:56:56.639 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-09 08:56:57.012 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-09 08:56:57.019 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-09-09 08:56:57.056 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-09 08:56:57.071 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-09 08:56:57.085 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.539 seconds (process running for 2.82)
+2025-09-09 08:56:57.147 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-09-09 08:57:09.396 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-09 08:57:09.397 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-09 08:57:09.404 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-09-09 08:57:09.443 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@56bed11b, com.touin.thierry.sb.test.application.dto.PigDTO@72b37ec8, com.touin.thierry.sb.test.application.dto.PigDTO@287987e5, com.touin.thierry.sb.test.application.dto.PigDTO@90fb2af]
+2025-09-09 08:57:09.445 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features NOT actived !
+2025-09-09 08:57:09.445 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-prod.fr/xxxx
+2025-09-09 08:57:09.445 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-09-09 08:57:09.548 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-09-09 08:57:09.548 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-09-09 08:57:09.649 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-09-09 09:03:07.615 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-09 09:03:07.622 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-09 09:03:13.058 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 593 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-09-09 09:03:13.060 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-09 09:03:13.091 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-09 09:03:13.091 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-09 09:03:14.296 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-09 09:03:14.309 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-09 09:03:14.311 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-09 09:03:14.311 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-09 09:03:14.352 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-09 09:03:14.352 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1261 ms
+2025-09-09 09:03:14.771 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-09 09:03:15.223 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-09 09:03:15.234 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-09-09 09:03:15.281 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-09 09:03:15.293 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-09 09:03:15.308 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.714 seconds (process running for 3.053)
+2025-09-09 09:03:15.376 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-09-09 09:03:26.834 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-09 09:03:26.834 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-09 09:03:26.838 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-09-09 09:03:26.888 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@1dcc274f, com.touin.thierry.sb.test.application.dto.PigDTO@1ea79932, com.touin.thierry.sb.test.application.dto.PigDTO@7fdc527f, com.touin.thierry.sb.test.application.dto.PigDTO@1d6f44e0]
+2025-09-09 09:03:26.891 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features NOT actived !
+2025-09-09 09:03:26.892 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-prod.fr/xxxx
+2025-09-09 09:03:26.892 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-09-09 09:03:26.996 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-09-09 09:03:26.996 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-09-09 09:03:27.097 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-09-09 09:11:02.897 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-09 09:11:02.901 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-09 09:11:08.723 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 692 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-09-09 09:11:08.725 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-09 09:11:08.761 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-09 09:11:08.761 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-09 09:11:09.925 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-09 09:11:09.941 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-09 09:11:09.943 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-09 09:11:09.943 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-09 09:11:09.986 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-09 09:11:09.986 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1225 ms
+2025-09-09 09:11:10.383 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-09 09:11:10.771 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-09 09:11:10.778 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-09-09 09:11:10.817 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-09 09:11:10.827 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-09 09:11:10.839 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.609 seconds (process running for 2.875)
+2025-09-09 09:11:10.893 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-09-09 09:11:49.308 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-09 09:11:49.308 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-09 09:11:49.312 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-09 09:11:49.348 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@6c055a35, com.touin.thierry.sb.test.application.dto.PigDTO@394daf0f, com.touin.thierry.sb.test.application.dto.PigDTO@ec2aa43, com.touin.thierry.sb.test.application.dto.PigDTO@2fe0ac89]
+2025-09-09 09:11:49.351 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features NOT actived !
+2025-09-09 09:11:49.352 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-prod.fr/xxxx
+2025-09-09 09:11:49.352 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-09-09 09:11:49.455 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-09-09 09:11:49.456 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-09-09 09:11:49.557 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-09-09 09:14:56.230 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-09 09:14:56.235 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-09 09:15:02.201 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 792 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-09-09 09:15:02.203 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-09 09:15:02.235 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-09 09:15:02.235 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-09 09:15:03.247 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-09 09:15:03.256 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-09 09:15:03.257 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-09 09:15:03.258 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-09 09:15:03.282 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-09 09:15:03.283 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1046 ms
+2025-09-09 09:15:03.603 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-09 09:15:03.919 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-09 09:15:03.926 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-09-09 09:15:03.960 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-09 09:15:03.969 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-09 09:15:03.979 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.17 seconds (process running for 2.556)
+2025-09-09 09:15:04.029 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-09-09 09:15:56.931 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-09 09:15:56.932 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-09 09:15:56.936 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-09-09 09:15:56.969 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@bbffad7, com.touin.thierry.sb.test.application.dto.PigDTO@79d97b94, com.touin.thierry.sb.test.application.dto.PigDTO@22c9e0d1, com.touin.thierry.sb.test.application.dto.PigDTO@a11dc66]
+2025-09-09 09:15:56.973 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features NOT actived !
+2025-09-09 09:15:56.973 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-prod.fr/xxxx
+2025-09-09 09:15:56.974 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-09-09 09:15:57.077 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-09-09 09:15:57.078 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-09-09 09:15:57.179 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-09-09 09:28:44.041 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-09 09:28:44.048 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-09 09:28:48.902 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 891 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-09-09 09:28:48.905 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-09 09:28:48.939 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-09 09:28:48.939 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-09 09:28:50.221 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-09 09:28:50.230 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-09 09:28:50.234 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-09 09:28:50.234 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-09 09:28:50.262 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-09 09:28:50.262 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1322 ms
+2025-09-09 09:28:50.663 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-09 09:28:50.963 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-09 09:28:50.968 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-09-09 09:28:51.004 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-09 09:28:51.013 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-09 09:28:51.023 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.474 seconds (process running for 2.699)
+2025-09-09 09:28:51.071 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-09-09 09:28:58.998 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-09 09:28:58.998 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-09 09:28:59.001 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-09 09:28:59.032 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@2850deac, com.touin.thierry.sb.test.application.dto.PigDTO@59e5f8c0, com.touin.thierry.sb.test.application.dto.PigDTO@1622bf89, com.touin.thierry.sb.test.application.dto.PigDTO@569ca9b6]
+2025-09-09 09:28:59.035 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features NOT actived !
+2025-09-09 09:28:59.035 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-prod.fr/xxxx
+2025-09-09 09:28:59.036 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-09-09 09:28:59.139 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-09-09 09:28:59.140 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-09-09 09:28:59.241 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-09-09 09:53:06.839 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-09 09:53:06.843 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-09 09:53:11.630 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 990 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-09-09 09:53:11.632 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-09 09:53:11.664 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-09 09:53:11.665 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-09 09:53:12.623 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-09 09:53:12.630 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-09 09:53:12.632 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-09 09:53:12.632 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-09 09:53:12.658 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-09 09:53:12.658 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 993 ms
+2025-09-09 09:53:12.962 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-09 09:53:13.268 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-09 09:53:13.274 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-09-09 09:53:13.308 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-09 09:53:13.317 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-09 09:53:13.327 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.086 seconds (process running for 2.37)
+2025-09-09 09:53:13.379 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-09-09 09:54:59.953 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-09 09:54:59.953 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-09 09:54:59.954 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-09 09:54:59.979 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@ecbb9cc, com.touin.thierry.sb.test.application.dto.PigDTO@6f011a6f, com.touin.thierry.sb.test.application.dto.PigDTO@3daf20b6, com.touin.thierry.sb.test.application.dto.PigDTO@1d391e9]
+2025-09-09 09:54:59.981 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features NOT actived !
+2025-09-09 09:54:59.981 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-prod.fr/xxxx
+2025-09-09 09:54:59.982 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-09-09 09:55:00.085 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-09-09 09:55:00.085 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-09-09 09:55:00.186 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-09-09 10:02:13.330 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-09 10:02:13.334 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-09 10:02:18.384 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.7 with PID 1089 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-09-09 10:02:18.386 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-09 10:02:18.413 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-09 10:02:18.414 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-09 10:02:19.275 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-09 10:02:19.285 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-09 10:02:19.286 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-09 10:02:19.287 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-09 10:02:19.312 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-09 10:02:19.313 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 899 ms
+2025-09-09 10:02:19.611 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-09 10:02:19.915 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-09 10:02:19.921 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-09-09 10:02:19.955 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-09 10:02:19.964 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-09 10:02:19.974 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 1.937 seconds (process running for 2.174)
+2025-09-09 10:02:20.024 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-09-09 10:05:36.245 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-09 10:05:36.245 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-09 10:05:36.247 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-09 10:05:36.274 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@10401b2d, com.touin.thierry.sb.test.application.dto.PigDTO@c27c19d, com.touin.thierry.sb.test.application.dto.PigDTO@79f4d2ff, com.touin.thierry.sb.test.application.dto.PigDTO@4ec39ec2]
+2025-09-09 10:05:36.276 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features NOT actived !
+2025-09-09 10:05:36.276 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-prod.fr/xxxx
+2025-09-09 10:05:36.276 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-09-09 10:05:36.379 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-09-09 10:05:36.379 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-09-09 10:05:36.481 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto

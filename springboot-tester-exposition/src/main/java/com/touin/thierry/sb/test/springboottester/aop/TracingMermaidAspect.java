@@ -1,0 +1,242 @@
+package com.touin.thierry.sb.test.springboottester.aop;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RestController;
+
+@Aspect
+@Component
+public class TracingMermaidAspect {
+
+    @Around("within(com.touin.thierry.sb..*)")
+    public Object trace(ProceedingJoinPoint pjp) throws Throwable {
+        String fqcn = pjp.getSignature().getDeclaringTypeName() + "." + pjp.getSignature().getName();
+        String typeName = pjp.getSignature().getDeclaringTypeName();
+        String module = determineModuleFromPackage(typeName);
+        trace.get().add(module + ": " + fqcn);
+
+        Object result = pjp.proceed();
+
+        if (isController(pjp)) {
+            String mermaid = buildMermaid(trace.get());
+            System.out.println("\n```mermaid\n" + mermaid + "\n```\n");
+
+            String mermaidSeq = buildMermaidSequence(trace.get());
+            System.out.println("\n```mermaid\n" + mermaidSeq + "\n```\n");
+
+            trace.remove();
+        }
+
+        return result;
+    }
+
+    private static String determineModuleFromPackage(String declaringTypeName) {
+        // declaringTypeName est typiquement "com.foo.bar.MyClass"
+        String pkg = packageOf(declaringTypeName);
+        String n = pkg.toLowerCase(Locale.ROOT);
+
+        // --- mapping principal (hexagonal) ---
+        if (n.contains(".exposition.") || n.endsWith(".exposition")
+                || n.contains(".web.") || n.endsWith(".web")
+                || n.contains(".api.") || n.endsWith(".api")
+                || n.contains(".controller.") || n.endsWith(".controller")) {
+            return "exposition";
+        }
+
+        if (n.contains(".application.") || n.endsWith(".application")
+                || n.contains(".app.") || n.endsWith(".app")
+                || n.contains(".usecase.") || n.endsWith(".usecase")
+                || n.contains(".usecases.") || n.endsWith(".usecases")
+                || n.contains(".service.") || n.endsWith(".service")) {
+            return "application";
+        }
+
+        if (n.contains(".domain.") || n.endsWith(".domain")
+                || n.contains(".domaine.") || n.endsWith(".domaine")
+                || n.contains(".model.") || n.endsWith(".model")
+                || n.contains(".core.") || n.endsWith(".core")
+                || n.contains(".aggregate.") || n.endsWith(".aggregate")
+                || n.contains(".entities.") || n.endsWith(".entities")) {
+            return "domain";
+        }
+
+        if (n.contains(".infrastructure.") || n.endsWith(".infrastructure")
+                || n.contains(".infra.") || n.endsWith(".infra")
+                || n.contains(".adapter.") || n.endsWith(".adapter")
+                || n.contains(".adapters.") || n.endsWith(".adapters")
+                || n.contains(".repository.") || n.endsWith(".repository")
+                || n.contains(".client.") || n.endsWith(".client")
+                || n.contains(".external.") || n.endsWith(".external")
+                || n.contains(".configuration.") || n.endsWith(".configuration")
+                || n.contains(".config.") || n.endsWith(".config")) {
+            return "infrastructure";
+        }
+
+        return "unknown";
+    }
+
+    private static String packageOf(String declaringTypeName) {
+        int lastDot = declaringTypeName.lastIndexOf('.');
+        return (lastDot > 0) ? declaringTypeName.substring(0, lastDot) : "";
+    }
+
+    private static final ThreadLocal<List<String>> trace = ThreadLocal.withInitial(ArrayList::new);
+
+    // (determineModuleFromPackage + packageOf identiques à ta version)
+
+    private String buildMermaid(List<String> nodes) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("flowchart TD\n");
+        sb.append("  classDef exposition fill:#FFD700,stroke:#333,stroke-width:2px;\n");
+        sb.append("  classDef application fill:#1E90FF,stroke:#333,stroke-width:2px;\n");
+        sb.append("  classDef domain fill:#32CD32,stroke:#333,stroke-width:2px;\n");
+        sb.append("  classDef infrastructure fill:#FF69B4,stroke:#333,stroke-width:2px;\n\n");
+
+        // Déclarer chaque nœud une fois avec ID unique
+        for (int i = 0; i < nodes.size(); i++) {
+            String node = nodes.get(i);
+            String id = "N" + i;
+            sb.append(String.format("  %s[\"%s\"]\n", id, node));
+            String module = node.substring(0, node.indexOf(":"));
+            sb.append(String.format("  class %s %s;\n", id, module));
+        }
+        sb.append("\n");
+
+        // Déclarer les flèches entre les IDs
+        for (int i = 0; i < nodes.size() - 1; i++) {
+            sb.append(String.format("  N%d --> N%d\n", i, i + 1));
+        }
+
+        // Optionnel : style global pour les liens
+        sb.append("\n  linkStyle default stroke:#555,stroke-width:1px;\n");
+        return sb.toString();
+    }
+
+    private boolean isController(ProceedingJoinPoint pjp) {
+        return pjp.getSignature().getDeclaringType().isAnnotationPresent(RestController.class);
+    }
+
+    /**
+     * Génère un diagramme de séquence Mermaid à partir de la trace (liste "module:
+     * fqcn.method").
+     * - Affiche Class.method (sans package)
+     * - Regroupe les messages par module source et met un rect coloré par groupe
+     */
+    private String buildMermaidSequence(List<String> nodes) {
+        if (nodes == null || nodes.size() < 2) {
+            return "sequenceDiagram\n  autonumber\n  participant E as Exposition\n  participant A as Application\n  participant D as Domain\n  participant I as Infrastructure\n";
+        }
+
+        // Couleurs (rgba pour fond semi-transparent)
+        Map<String, String> colorMap = Map.of(
+                "exposition", "rgba(255,215,0,0.12)",
+                "application", "rgba(30,144,255,0.12)",
+                "domain", "rgba(50,205,50,0.12)",
+                "infrastructure", "rgba(255,105,180,0.12)",
+                "unknown", "rgba(200,200,200,0.08)");
+
+        StringBuilder sb = new StringBuilder();
+        // Init optionnel (taille / style des acteurs/messages)
+        sb.append(
+                "%%{init: {'sequence': {'actorFontSize':14,'actorFontWeight':600,'messageFontSize':12,'rightAngles':true}}}%%\n");
+        sb.append("sequenceDiagram\n");
+        sb.append("  autonumber\n");
+        sb.append("  participant E as Exposition\n");
+        sb.append("  participant A as Application\n");
+        sb.append("  participant D as Domain\n");
+        sb.append("  participant I as Infrastructure\n\n");
+
+        // On parcourt les arêtes (i -> i+1) et on regroupe les messages
+        String currentRectModule = null;
+        for (int i = 0; i < nodes.size() - 1; i++) {
+            String src = nodes.get(i);
+            String tgt = nodes.get(i + 1);
+
+            String srcModule = moduleOf(src);
+            String tgtModule = moduleOf(tgt);
+
+            String srcActor = actorCode(srcModule); // E/A/D/I
+            String tgtActor = actorCode(tgtModule);
+
+            // libellé : Class.method (sans package)
+            String label = simpleClassDotMethod(tgt);
+
+            // démarrer/fermer rect quand le module source change (regroupement)
+            if (currentRectModule == null || !currentRectModule.equals(srcModule)) {
+                if (currentRectModule != null) {
+                    sb.append("  end\n\n"); // fermer précédent
+                }
+                String color = colorMap.getOrDefault(srcModule, colorMap.get("unknown"));
+                sb.append(String.format("  rect %s\n", color));
+                currentRectModule = srcModule;
+            }
+
+            sb.append(String.format("    %s->>%s: %s\n", srcActor, tgtActor, label));
+        }
+
+        if (currentRectModule != null) {
+            sb.append("  end\n"); // fermer dernier rect
+        }
+
+        return sb.toString();
+    }
+
+    /**
+     * Retourne "exposition" / "application" / "domain" / "infrastructure" à partir
+     * d'un node "module: fqcn.method"
+     */
+    private String moduleOf(String node) {
+        if (node == null)
+            return "unknown";
+        int colon = node.indexOf(':');
+        if (colon < 0)
+            return "unknown";
+        return node.substring(0, colon).trim();
+    }
+
+    /**
+     * Mappe module -> participant code utilisé dans le sequenceDiagram (E/A/D/I)
+     */
+    private String actorCode(String module) {
+        switch (module) {
+            case "exposition":
+                return "E";
+            case "application":
+                return "A";
+            case "domain":
+                return "D";
+            case "infrastructure":
+                return "I";
+            default:
+                return "U";
+        }
+    }
+
+    /**
+     * Extrait "Class.method" à partir de "module: com.foo.BarClass.methodName"
+     * Si la chaîne n'a pas le format attendu, renvoie la partie après ': ' brute.
+     */
+    private String simpleClassDotMethod(String node) {
+        if (node == null)
+            return "";
+        int colon = node.indexOf(':');
+        String after = (colon >= 0) ? node.substring(colon + 1).trim() : node.trim();
+        // after = "com.foo.BarClass.method"
+        int lastDot = after.lastIndexOf('.');
+        if (lastDot <= 0)
+            return after;
+        String fqcn = after.substring(0, lastDot); // "com.foo.BarClass"
+        String method = after.substring(lastDot + 1); // "method"
+        int classDot = fqcn.lastIndexOf('.');
+        String classSimple = (classDot >= 0) ? fqcn.substring(classDot + 1) : fqcn;
+        return classSimple + "." + method;
+    }
+
+}
