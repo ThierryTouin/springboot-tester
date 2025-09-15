@@ -15,10 +15,22 @@ import org.springframework.web.bind.annotation.RestController;
 @Component
 public class TracingMermaidAspect {
 
+    private static final String[] EXCLUDED_PACKAGES = {
+        "com.touin.thierry.sb.test.springboottester.infrastructure.config"
+    };
+
+
     @Around("within(com.touin.thierry.sb..*)")
     public Object trace(ProceedingJoinPoint pjp) throws Throwable {
-        String fqcn = pjp.getSignature().getDeclaringTypeName() + "." + pjp.getSignature().getName();
+
         String typeName = pjp.getSignature().getDeclaringTypeName();
+
+        // Vérifier si le package courant est exclu
+        if (isExcluded(typeName)) {
+            return pjp.proceed(); // ne pas tracer, exécuter normalement
+        }
+
+        String fqcn = pjp.getSignature().getDeclaringTypeName() + "." + pjp.getSignature().getName();
         String module = determineModuleFromPackage(typeName);
         trace.get().add(module + ": " + fqcn);
 
@@ -35,6 +47,19 @@ public class TracingMermaidAspect {
         }
 
         return result;
+    }
+
+    private boolean isExcluded(String fullyQualifiedClassName) {
+        if (EXCLUDED_PACKAGES == null || EXCLUDED_PACKAGES.length == 0) {
+            return false;
+        }
+
+        for (String excludedPackage : EXCLUDED_PACKAGES) {
+            if (fullyQualifiedClassName.startsWith(excludedPackage)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private static String determineModuleFromPackage(String declaringTypeName) {

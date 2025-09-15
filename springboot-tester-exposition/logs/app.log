@@ -836,3 +836,166 @@ Consider defining a bean of type 'com.touin.thierry.sb.test.springboottester.dom
 2025-09-09 15:31:40.204 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.exposition.PigController - --getPigs()
 2025-09-09 15:37:38.069 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
 2025-09-09 15:37:38.075 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-15 13:21:41.538 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.8 with PID 6224 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-09-15 13:21:41.540 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-15 13:21:41.587 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-15 13:21:41.588 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-15 13:21:42.784 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-15 13:21:42.798 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-15 13:21:42.801 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-15 13:21:42.802 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-15 13:21:42.847 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-15 13:21:42.847 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1259 ms
+2025-09-15 13:21:43.043 [restartedMain] INFO  c.t.t.s.t.s.i.e.CacheConfig - ++externalServiceCache()
+2025-09-15 13:21:43.065 [restartedMain] INFO  c.t.t.s.t.s.i.e.CacheConfig - --externalServiceCache()
+2025-09-15 13:21:43.072 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myService()
+2025-09-15 13:21:43.073 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myService()
+2025-09-15 13:21:43.104 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myHelloWorldRealAdapter()
+2025-09-15 13:21:43.104 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myHelloWorldRealAdapter()
+2025-09-15 13:21:43.255 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-15 13:21:43.645 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-15 13:21:43.652 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-09-15 13:21:43.705 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-15 13:21:43.717 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-15 13:21:43.736 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.65 seconds (process running for 2.92)
+2025-09-15 13:21:43.813 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-09-15 13:27:15.693 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-15 13:27:15.693 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-15 13:27:15.696 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-09-15 13:27:15.737 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.exposition.PigController - ++getPigs()
+2025-09-15 13:27:15.737 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - ++getPigs()
+2025-09-15 13:27:15.738 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@4a0ebc6b, com.touin.thierry.sb.test.application.dto.PigDTO@384691b8, com.touin.thierry.sb.test.application.dto.PigDTO@703ccb08, com.touin.thierry.sb.test.application.dto.PigDTO@4f8243f8]
+2025-09-15 13:27:15.738 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.domain.PigBizServiceImpl - ++test()
+2025-09-15 13:27:15.739 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - ++doSomething()
+2025-09-15 13:27:15.739 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MyAppPropertiesV2 - ++getFeatureEnabled()
+2025-09-15 13:27:15.740 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MyAppPropertiesV2 - --getFeatureEnabled()
+2025-09-15 13:27:15.740 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features NOT actived !
+2025-09-15 13:27:15.740 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MyAppPropertiesV2 - ++getPostalCodeServiceEndpoint()
+2025-09-15 13:27:15.740 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MyAppPropertiesV2 - --getPostalCodeServiceEndpoint()
+2025-09-15 13:27:15.740 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-prod.fr/xxxx
+2025-09-15 13:27:15.740 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - ++getData()
+2025-09-15 13:27:15.741 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-09-15 13:27:15.741 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceClient - ++getById()
+2025-09-15 13:27:15.842 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceClient - --getById()
+2025-09-15 13:27:15.845 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - --getData()
+2025-09-15 13:27:15.846 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-09-15 13:27:15.846 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - ++getData()
+2025-09-15 13:27:15.847 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-09-15 13:27:15.847 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceClient - ++getById()
+2025-09-15 13:27:15.948 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceClient - --getById()
+2025-09-15 13:27:15.949 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - --getData()
+2025-09-15 13:27:15.949 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-09-15 13:27:15.950 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - --doSomething()
+2025-09-15 13:27:15.950 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.domain.PigBizServiceImpl - --test()
+2025-09-15 13:27:15.951 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - --getPigs()
+2025-09-15 13:27:15.956 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.exposition.PigController - --getPigs()
+2025-09-15 13:34:42.889 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-15 13:34:42.896 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-15 13:34:49.773 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.8 with PID 6336 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-09-15 13:34:49.775 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-15 13:34:49.820 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-15 13:34:49.820 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-15 13:34:50.983 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-15 13:34:50.994 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-15 13:34:50.996 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-15 13:34:50.996 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-15 13:34:51.036 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-15 13:34:51.037 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1215 ms
+2025-09-15 13:34:51.257 [restartedMain] INFO  c.t.t.s.t.s.i.e.CacheConfig - ++externalServiceCache()
+2025-09-15 13:34:51.276 [restartedMain] INFO  c.t.t.s.t.s.i.e.CacheConfig - --externalServiceCache()
+2025-09-15 13:34:51.288 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myService()
+2025-09-15 13:34:51.289 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myService()
+2025-09-15 13:34:51.326 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myHelloWorldRealAdapter()
+2025-09-15 13:34:51.326 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myHelloWorldRealAdapter()
+2025-09-15 13:34:51.480 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-15 13:34:51.877 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-15 13:34:51.884 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-09-15 13:34:51.941 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-15 13:34:51.952 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-15 13:34:51.971 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.684 seconds (process running for 2.995)
+2025-09-15 13:34:52.051 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-09-15 13:35:04.860 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-15 13:35:04.860 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-15 13:35:04.862 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-15 13:35:04.900 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.exposition.PigController - ++getPigs()
+2025-09-15 13:35:04.901 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - ++getPigs()
+2025-09-15 13:35:04.901 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@4745cb06, com.touin.thierry.sb.test.application.dto.PigDTO@70ca158c, com.touin.thierry.sb.test.application.dto.PigDTO@5bef05ae, com.touin.thierry.sb.test.application.dto.PigDTO@6375614f]
+2025-09-15 13:35:04.902 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.domain.PigBizServiceImpl - ++test()
+2025-09-15 13:35:04.903 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - ++doSomething()
+2025-09-15 13:35:04.903 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MyAppPropertiesV2 - ++getFeatureEnabled()
+2025-09-15 13:35:04.903 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MyAppPropertiesV2 - --getFeatureEnabled()
+2025-09-15 13:35:04.904 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features NOT actived !
+2025-09-15 13:35:04.904 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MyAppPropertiesV2 - ++getPostalCodeServiceEndpoint()
+2025-09-15 13:35:04.904 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MyAppPropertiesV2 - --getPostalCodeServiceEndpoint()
+2025-09-15 13:35:04.904 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-prod.fr/xxxx
+2025-09-15 13:35:04.905 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - ++getData()
+2025-09-15 13:35:04.906 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-09-15 13:35:04.906 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceClient - ++getById()
+2025-09-15 13:35:05.007 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceClient - --getById()
+2025-09-15 13:35:05.009 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - --getData()
+2025-09-15 13:35:05.009 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-09-15 13:35:05.009 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - ++getData()
+2025-09-15 13:35:05.010 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-09-15 13:35:05.010 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceClient - ++getById()
+2025-09-15 13:35:05.110 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceClient - --getById()
+2025-09-15 13:35:05.111 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - --getData()
+2025-09-15 13:35:05.111 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-09-15 13:35:05.111 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - --doSomething()
+2025-09-15 13:35:05.111 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.domain.PigBizServiceImpl - --test()
+2025-09-15 13:35:05.111 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - --getPigs()
+2025-09-15 13:35:05.114 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.exposition.PigController - --getPigs()
+2025-09-15 13:35:44.991 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-15 13:35:45.001 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-15 13:36:03.071 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 21.0.8 with PID 6530 (/home/user1/app/springboot-tester/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/springboot-tester-exposition)
+2025-09-15 13:36:03.073 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-15 13:36:03.120 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-15 13:36:03.121 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-15 13:36:04.304 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-15 13:36:04.315 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-15 13:36:04.317 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-15 13:36:04.317 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-15 13:36:04.363 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-15 13:36:04.363 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1242 ms
+2025-09-15 13:36:04.586 [restartedMain] INFO  c.t.t.s.t.s.i.e.CacheConfig - ++externalServiceCache()
+2025-09-15 13:36:04.606 [restartedMain] INFO  c.t.t.s.t.s.i.e.CacheConfig - --externalServiceCache()
+2025-09-15 13:36:04.614 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myService()
+2025-09-15 13:36:04.615 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myService()
+2025-09-15 13:36:04.643 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myHelloWorldRealAdapter()
+2025-09-15 13:36:04.644 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myHelloWorldRealAdapter()
+2025-09-15 13:36:04.798 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-15 13:36:05.194 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-15 13:36:05.202 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025-09-15 13:36:05.260 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-15 13:36:05.272 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-15 13:36:05.291 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.676 seconds (process running for 2.953)
+2025-09-15 13:36:05.368 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2025-09-15 13:36:11.959 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-15 13:36:11.959 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-15 13:36:11.961 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-15 13:36:12.008 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.exposition.PigController - ++getPigs()
+2025-09-15 13:36:12.009 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - ++getPigs()
+2025-09-15 13:36:12.009 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - $>>> pigs=[com.touin.thierry.sb.test.application.dto.PigDTO@38bc77ed, com.touin.thierry.sb.test.application.dto.PigDTO@1d7a13f5, com.touin.thierry.sb.test.application.dto.PigDTO@19d77865, com.touin.thierry.sb.test.application.dto.PigDTO@299c11ce]
+2025-09-15 13:36:12.009 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.domain.PigBizServiceImpl - ++test()
+2025-09-15 13:36:12.010 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - ++doSomething()
+2025-09-15 13:36:12.010 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.c.MyAppPropertiesV2 - ++getFeatureEnabled()
+2025-09-15 13:36:12.011 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.c.MyAppPropertiesV2 - --getFeatureEnabled()
+2025-09-15 13:36:12.011 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - features NOT actived !
+2025-09-15 13:36:12.011 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.c.MyAppPropertiesV2 - ++getPostalCodeServiceEndpoint()
+2025-09-15 13:36:12.011 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.c.MyAppPropertiesV2 - --getPostalCodeServiceEndpoint()
+2025-09-15 13:36:12.011 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - PostalCodeServiceEndpoint:http://mon-service-prod.fr/xxxx
+2025-09-15 13:36:12.011 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - ++getData()
+2025-09-15 13:36:12.012 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id titi
+2025-09-15 13:36:12.012 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceClient - ++getById()
+2025-09-15 13:36:12.113 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceClient - --getById()
+2025-09-15 13:36:12.118 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - --getData()
+2025-09-15 13:36:12.119 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoTiti:value for titi
+2025-09-15 13:36:12.120 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - ++getData()
+2025-09-15 13:36:12.120 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - Calling external service for id toto
+2025-09-15 13:36:12.121 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceClient - ++getById()
+2025-09-15 13:36:12.222 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceClient - --getById()
+2025-09-15 13:36:12.223 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.e.ExternalServiceAdapter - --getData()
+2025-09-15 13:36:12.223 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - externalDtoToto:value for toto
+2025-09-15 13:36:12.224 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.i.MonAdaptateurImpl - --doSomething()
+2025-09-15 13:36:12.224 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.domain.PigBizServiceImpl - --test()
+2025-09-15 13:36:12.225 [http-nio-8080-exec-1] INFO  c.t.t.s.t.a.service.PigServiceImpl - --getPigs()
+2025-09-15 13:36:12.232 [http-nio-8080-exec-1] INFO  c.t.t.s.t.s.exposition.PigController - --getPigs()

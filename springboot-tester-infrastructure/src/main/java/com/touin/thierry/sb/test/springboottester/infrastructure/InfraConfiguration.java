@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 import com.touin.thierry.sb.test.springboottester.domain.MonAdaptateur;
+import com.touin.thierry.sb.test.springboottester.infrastructure.config.MyAppPropertiesV2;
 import com.touin.thierry.sb.test.springboottester.infrastructure.externalservice.ExternalServicePort;
 
 @Configuration
