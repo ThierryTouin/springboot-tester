@@ -158,20 +158,32 @@ public class TracingMermaidAspect {
         sb.append("  participant D as Domain\n");
         sb.append("  participant I as Infrastructure\n\n");
 
+        System.out.println("\n```nodes\n" + nodes + "\n```\n");
+
         // On parcourt les arêtes (i -> i+1) et on regroupe les messages
         String currentRectModule = null;
         for (int i = 0; i < nodes.size() - 1; i++) {
+
             String src = nodes.get(i);
             String tgt = nodes.get(i + 1);
 
+            System.out.println("\n`src : " + src + "`");
+            System.out.println("\n`tgt : " + tgt + "`");
+
+
             String srcModule = moduleOf(src);
             String tgtModule = moduleOf(tgt);
+            System.out.println("\n`srcModule : " + srcModule + "`");
+            System.out.println("\n`tgtModule : " + tgtModule + "`");
 
             String srcActor = actorCode(srcModule); // E/A/D/I
             String tgtActor = actorCode(tgtModule);
+            System.out.println("\n`srcActor : " + srcActor + "`");
+            System.out.println("\n`tgtActor : " + tgtActor + "`");
 
             // libellé : Class.method (sans package)
             String label = simpleClassDotMethod(tgt);
+            System.out.println("\n`label : " + label + "`");
 
             // démarrer/fermer rect quand le module source change (regroupement)
             if (currentRectModule == null || !currentRectModule.equals(srcModule)) {
@@ -183,7 +195,7 @@ public class TracingMermaidAspect {
                 currentRectModule = srcModule;
             }
 
-            sb.append(String.format("    %s->>%s: %s\n", srcActor, tgtActor, label));
+            sb.append(String.format("    %s->>%s: %s\n", modifierSrcActor(srcActor, tgtActor), tgtActor, label));
         }
 
         if (currentRectModule != null) {
@@ -191,6 +203,22 @@ public class TracingMermaidAspect {
         }
 
         return sb.toString();
+    }
+
+    public String modifierSrcActor(String srcActor, String tgtActor) {
+        // Si égaux, on ne change rien
+        if (tgtActor == srcActor) {
+            return srcActor;
+        }
+        
+        // Sinon, on applique les règles
+        switch (tgtActor) {
+            case "I": return "D";
+            case "D": return "A";
+            case "A": return "E";
+            case "E": 
+            default: return srcActor; // Pas de changement pour 'E' ou valeurs invalides
+        }
     }
 
     /**
