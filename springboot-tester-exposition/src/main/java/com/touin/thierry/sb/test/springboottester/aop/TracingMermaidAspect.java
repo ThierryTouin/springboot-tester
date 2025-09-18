@@ -141,10 +141,10 @@ public class TracingMermaidAspect {
 
         // Couleurs (rgba pour fond semi-transparent)
         Map<String, String> colorMap = Map.of(
-                "exposition", "rgba(255,215,0,0.12)",
-                "application", "rgba(30,144,255,0.12)",
-                "domain", "rgba(50,205,50,0.12)",
-                "infrastructure", "rgba(255,105,180,0.12)",
+                "E", "rgba(255,215,0,0.12)",
+                "A", "rgba(30,144,255,0.12)",
+                "D", "rgba(50,205,50,0.12)",
+                "I", "rgba(255,105,180,0.12)",
                 "unknown", "rgba(200,200,200,0.08)");
 
         StringBuilder sb = new StringBuilder();
@@ -185,17 +185,20 @@ public class TracingMermaidAspect {
             String label = simpleClassDotMethod(tgt);
             System.out.println("\n`label : " + label + "`");
 
+            srcActor = modifierSrcActor(srcActor, tgtActor);
+            System.out.println("\n`srcActor modifié : " + srcActor + "`");
+
             // démarrer/fermer rect quand le module source change (regroupement)
             if (currentRectModule == null || !currentRectModule.equals(srcModule)) {
                 if (currentRectModule != null) {
                     sb.append("  end\n\n"); // fermer précédent
                 }
-                String color = colorMap.getOrDefault(srcModule, colorMap.get("unknown"));
+                String color = colorMap.getOrDefault(srcActor, colorMap.get("unknown"));
                 sb.append(String.format("  rect %s\n", color));
                 currentRectModule = srcModule;
             }
 
-            sb.append(String.format("    %s->>%s: %s\n", modifierSrcActor(srcActor, tgtActor), tgtActor, label));
+            sb.append(String.format("    %s->>%s: %s\n", srcActor, tgtActor, label));
         }
 
         if (currentRectModule != null) {
