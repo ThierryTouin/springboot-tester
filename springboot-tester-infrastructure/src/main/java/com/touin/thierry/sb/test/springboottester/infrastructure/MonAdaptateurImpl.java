@@ -1,6 +1,7 @@
 package com.touin.thierry.sb.test.springboottester.infrastructure;
 
 import com.touin.thierry.sb.test.springboottester.domain.MonAdaptateur;
+import com.touin.thierry.sb.test.springboottester.infrastructure.config.MyAppPropertiesV2;
 import com.touin.thierry.sb.test.springboottester.infrastructure.externalservice.ExternalDto;
 import com.touin.thierry.sb.test.springboottester.infrastructure.externalservice.ExternalServicePort;
 

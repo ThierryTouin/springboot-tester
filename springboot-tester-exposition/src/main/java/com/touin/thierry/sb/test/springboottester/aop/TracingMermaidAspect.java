@@ -15,10 +15,22 @@ import org.springframework.web.bind.annotation.RestController;
 @Component
 public class TracingMermaidAspect {
 
+    private static final String[] EXCLUDED_PACKAGES = {
+        "com.touin.thierry.sb.test.springboottester.infrastructure.config"
+    };
+
+
     @Around("within(com.touin.thierry.sb..*)")
     public Object trace(ProceedingJoinPoint pjp) throws Throwable {
-        String fqcn = pjp.getSignature().getDeclaringTypeName() + "." + pjp.getSignature().getName();
+
         String typeName = pjp.getSignature().getDeclaringTypeName();
+
+        // Vérifier si le package courant est exclu
+        if (isExcluded(typeName)) {
+            return pjp.proceed(); // ne pas tracer, exécuter normalement
+        }
+
+        String fqcn = pjp.getSignature().getDeclaringTypeName() + "." + pjp.getSignature().getName();
         String module = determineModuleFromPackage(typeName);
         trace.get().add(module + ": " + fqcn);
 
@@ -35,6 +47,19 @@ public class TracingMermaidAspect {
         }
 
         return result;
+    }
+
+    private boolean isExcluded(String fullyQualifiedClassName) {
+        if (EXCLUDED_PACKAGES == null || EXCLUDED_PACKAGES.length == 0) {
+            return false;
+        }
+
+        for (String excludedPackage : EXCLUDED_PACKAGES) {
+            if (fullyQualifiedClassName.startsWith(excludedPackage)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private static String determineModuleFromPackage(String declaringTypeName) {
@@ -116,10 +141,10 @@ public class TracingMermaidAspect {
 
         // Couleurs (rgba pour fond semi-transparent)
         Map<String, String> colorMap = Map.of(
-                "exposition", "rgba(255,215,0,0.12)",
-                "application", "rgba(30,144,255,0.12)",
-                "domain", "rgba(50,205,50,0.12)",
-                "infrastructure", "rgba(255,105,180,0.12)",
+                "E", "rgba(255,215,0,0.12)",
+                "A", "rgba(30,144,255,0.12)",
+                "D", "rgba(50,205,50,0.12)",
+                "I", "rgba(255,105,180,0.12)",
                 "unknown", "rgba(200,200,200,0.08)");
 
         StringBuilder sb = new StringBuilder();
@@ -133,27 +158,42 @@ public class TracingMermaidAspect {
         sb.append("  participant D as Domain\n");
         sb.append("  participant I as Infrastructure\n\n");
 
+        System.out.println("\n```nodes\n" + nodes + "\n```\n");
+
         // On parcourt les arêtes (i -> i+1) et on regroupe les messages
         String currentRectModule = null;
         for (int i = 0; i < nodes.size() - 1; i++) {
+
             String src = nodes.get(i);
             String tgt = nodes.get(i + 1);
 
+            System.out.println("\n`src : " + src + "`");
+            System.out.println("\n`tgt : " + tgt + "`");
+
+
             String srcModule = moduleOf(src);
             String tgtModule = moduleOf(tgt);
+            System.out.println("\n`srcModule : " + srcModule + "`");
+            System.out.println("\n`tgtModule : " + tgtModule + "`");
 
             String srcActor = actorCode(srcModule); // E/A/D/I
             String tgtActor = actorCode(tgtModule);
+            System.out.println("\n`srcActor : " + srcActor + "`");
+            System.out.println("\n`tgtActor : " + tgtActor + "`");
 
             // libellé : Class.method (sans package)
             String label = simpleClassDotMethod(tgt);
+            System.out.println("\n`label : " + label + "`");
+
+            srcActor = modifierSrcActor(srcActor, tgtActor);
+            System.out.println("\n`srcActor modifié : " + srcActor + "`");
 
             // démarrer/fermer rect quand le module source change (regroupement)
             if (currentRectModule == null || !currentRectModule.equals(srcModule)) {
                 if (currentRectModule != null) {
                     sb.append("  end\n\n"); // fermer précédent
                 }
-                String color = colorMap.getOrDefault(srcModule, colorMap.get("unknown"));
+                String color = colorMap.getOrDefault(srcActor, colorMap.get("unknown"));
                 sb.append(String.format("  rect %s\n", color));
                 currentRectModule = srcModule;
             }
@@ -166,6 +206,22 @@ public class TracingMermaidAspect {
         }
 
         return sb.toString();
+    }
+
+    public String modifierSrcActor(String srcActor, String tgtActor) {
+        // Si égaux, on ne change rien
+        if (tgtActor == srcActor) {
+            return srcActor;
+        }
+        
+        // Sinon, on applique les règles
+        switch (tgtActor) {
+            case "I": return "D";
+            case "D": return "A";
+            case "A": return "E";
+            case "E": 
+            default: return srcActor; // Pas de changement pour 'E' ou valeurs invalides
+        }
     }
 
     /**

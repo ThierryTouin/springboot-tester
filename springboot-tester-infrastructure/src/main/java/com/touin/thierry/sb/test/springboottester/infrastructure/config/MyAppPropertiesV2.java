@@ -1,4 +1,4 @@
-package com.touin.thierry.sb.test.springboottester.infrastructure;
+package com.touin.thierry.sb.test.springboottester.infrastructure.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
