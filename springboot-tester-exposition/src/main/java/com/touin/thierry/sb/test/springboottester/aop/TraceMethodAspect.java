@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-public class TraceMothodAspect {
+public class TraceMethodAspect {
 
     //private static final Logger LOGGER = LoggerFactory.getLogger(TraceMothodAspect.class);
 
