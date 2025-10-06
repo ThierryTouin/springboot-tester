@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
 @Service
 public class PigServiceImpl implements PigService {
 
@@ -19,6 +20,7 @@ private static final Logger LOGGER = LoggerFactory.getLogger(PigServiceImpl.clas
 
     @Autowired
     private PigBizService pigBizService;
+
 
     @Override
     public List<PigDTO> getPigs() {
@@ -34,10 +36,18 @@ private static final Logger LOGGER = LoggerFactory.getLogger(PigServiceImpl.clas
 		}
         System.out.println(">>> pigs={}" + pigs);
 
+        hasPermisisons();
+
         pigBizService.test();
 
         return pigs.stream()
                 .map(p -> new PigDTO(p.getId(), p.getName()))
                 .collect(Collectors.toList());
     }
+
+    private boolean hasPermisisons() {
+        System.out.println(">>> Je vérifie les permissions...");
+        return true;
+    }
+
 }

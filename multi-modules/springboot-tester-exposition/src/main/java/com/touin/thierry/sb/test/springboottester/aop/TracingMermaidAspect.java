@@ -20,17 +20,19 @@ public class TracingMermaidAspect {
     };
 
 
-    @Around("within(com.touin.thierry.sb..*)")
+    //@Around("within(com.touin.thierry.sb..*)")
+    @Around("execution(* com.touin.thierry.sb..*(..))")
     public Object trace(ProceedingJoinPoint pjp) throws Throwable {
 
         String typeName = pjp.getSignature().getDeclaringTypeName();
-
+        System.out.println("))))))) typeName=" + typeName);
         // Vérifier si le package courant est exclu
         if (isExcluded(typeName)) {
             return pjp.proceed(); // ne pas tracer, exécuter normalement
         }
 
         String fqcn = pjp.getSignature().getDeclaringTypeName() + "." + pjp.getSignature().getName();
+        System.out.println("))))))) fqcn=" + fqcn);
         String module = determineModuleFromPackage(typeName);
         trace.get().add(module + ": " + fqcn);
 

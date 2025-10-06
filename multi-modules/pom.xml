@@ -149,6 +149,8 @@
           </configuration>
         </plugin>
         
+
+
         <!-- Optionnel: jacoco en tant que plugin (exécuter couverture) -->
       <plugin>
         <groupId>org.jacoco</groupId>
@@ -254,6 +256,11 @@
 
         </executions>
       </plugin>
+
+
+
+
+
       </plugins>
 
     </pluginManagement>
