@@ -19,6 +19,7 @@
     <io.cucumber.version>7.15.0</io.cucumber.version> -->
     <maven-surefire-plugin.version>2.12.4</maven-surefire-plugin.version> 
     <io.cucumber.version>7.14.0</io.cucumber.version>
+    <jacoco.version>0.8.12</jacoco.version>
   </properties>
 
   <profiles>
@@ -168,9 +169,27 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.12</version>
+        <version>${jacoco.version}</version>
         <executions>
-              <execution>
+          <execution>
+            <id>prepare-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <phase>test</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+          <!-- Pour multi-modules, fusionner les rapports de tous les modules --> 
+          
+
+
+
+              <!-- <execution>
                   <id>pre-unit-tests</id>
                   <goals>
                       <goal>prepare-agent</goal>
@@ -224,7 +243,7 @@
                       <dataFile>target/jacoco/allTest.exec</dataFile>
                       <outputDirectory>target/jacoco/</outputDirectory>
                   </configuration>
-              </execution>
+              </execution> -->
           <!-- Optional: vérifie la couverture et échoue si en-dessous du seuil -->
           <!-- <execution>
             <id>check</id>
