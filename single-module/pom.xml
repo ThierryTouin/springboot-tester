@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"> <modelVersion>4.0.0</modelVersion>
+
+
+
+<groupId>com.touin.thierry.sb.test</groupId> 
+<artifactId>springboot-tester-single</artifactId> 
+<version>0.0.1-SNAPSHOT</version> 
+<name>Projet SpringBootTest avec un module unique</name>
+
+  <properties>
+    <java.version>17</java.version>
+    <spring.boot.version>3.5.0</spring.boot.version>
+    <slf4j.version>2.0.13</slf4j.version>
+    <!-- <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
+    <io.cucumber.version>7.15.0</io.cucumber.version> -->
+    <maven-surefire-plugin.version>2.12.4</maven-surefire-plugin.version> 
+    <io.cucumber.version>7.14.0</io.cucumber.version>
+  </properties>
+
+  <profiles>
+    <profile>
+      <id>default</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>      
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <groupId>org.apache.maven.plugins</groupId>
+            <version>${maven-surefire-plugin.version}</version>
+            <configuration>
+              <includes>
+                <include>**/CucumberDefaultTest.java</include>
+                <!-- <include>com.touin.thierry.sb.test.springboottester.CucumberDefaultTest.java</include> -->
+              </includes>
+              <!-- <failIfNoTests>true</failIfNoTests> -->
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>      
+    </profile>  
+    <profile>
+      <id>mock</id>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <groupId>org.apache.maven.plugins</groupId>
+            <version>${maven-surefire-plugin.version}</version>
+            <configuration>
+              <includes>
+                <include>**/CucumberMockTest.java</include>
+              </includes>
+              <!-- <failIfNoTests>true</failIfNoTests> -->
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>      
+    </profile>
+  </profiles>
+
+  <dependencies>
+    <!-- (tes dépendances inchangées) -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+      <version>${spring.boot.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>${spring.boot.version}</version>
+    </dependency>    
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
+      <version>${spring.boot.version}</version>
+      <scope>runtime</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+      <version>${spring.boot.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-aop</artifactId>
+      <version>${spring.boot.version}</version>
+    </dependency>
+
+    <!-- Test -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>${io.cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-spring</artifactId>
+      <version>${io.cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>${io.cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <version>${spring.boot.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+      <version>2.5.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.github.ben-manes.caffeine</groupId>
+      <artifactId>caffeine</artifactId>
+      <version>3.2.2</version>
+    </dependency>
+
+    <!-- remarque: jacoco est un plugin, pas une dépendance runtime -->
+
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Spring Boot plugin : repackager = crée le fat jar exécutable -->
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>${spring.boot.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+
+      <!-- Compiler plugin : utilise <release> pour cohérence avec le JDK -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <release>${java.version}</release>
+        </configuration>
+      </plugin>
+
+      <!-- Optionnel: jacoco en tant que plugin (exécuter couverture) -->
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.12</version>
+        <executions>
+              <execution>
+                  <id>pre-unit-tests</id>
+                  <goals>
+                      <goal>prepare-agent</goal>
+                  </goals>
+              </execution>
+              <execution>
+                  <id>post-unit-test</id>
+                  <phase>test</phase>
+                  <goals>
+                      <goal>report</goal>
+                  </goals>
+              </execution>
+              <execution>
+                  <id>pre-integration-tests</id>
+                  <goals>
+                      <goal>prepare-agent-integration</goal>
+                  </goals>
+              </execution>
+              <execution>
+                  <id>post-integration-tests</id>
+                  <phase>post-integration-test</phase>
+                  <goals>
+                      <goal>report-integration</goal>
+                  </goals>
+              </execution>
+              <execution>
+                  <id>merge</id>
+                  <phase>verify</phase>
+                  <goals>
+                      <goal>merge</goal>
+                  </goals>
+                  <configuration>
+                      <fileSets>
+                          <fileSet implementation="org.apache.maven.shared.model.fileset.FileSet">
+                              <directory>${project.basedir}</directory>
+                              <includes>
+                                  <include>**/*.exec</include>
+                              </includes>
+                          </fileSet>
+                      </fileSets>
+                      <destFile>target/jacoco/allTest.exec</destFile>
+                  </configuration>
+              </execution>
+              <execution>
+                  <id>post-merge-report</id>
+                  <phase>verify</phase>
+                  <goals>
+                      <goal>report</goal>
+                  </goals>
+                  <configuration>
+                      <dataFile>target/jacoco/allTest.exec</dataFile>
+                      <outputDirectory>target/jacoco/</outputDirectory>
+                  </configuration>
+              </execution>
+          <!-- Optional: vérifie la couverture et échoue si en-dessous du seuil -->
+          <!-- <execution>
+            <id>check</id>
+            <goals>
+              <goal>check</goal>
+            </goals>
+            <phase>verify</phase>
+            <configuration>
+              <rules>
+                <rule>
+                  <element>BUNDLE</element>
+                  <limits>
+                    <limit>
+                      <counter>LINE</counter>
+                      <value>COVEREDRATIO</value>
+                      <minimum>0.70</minimum>
+                    </limit>
+                  </limits>
+                </rule>
+              </rules>
+            </configuration>
+          </execution> -->
+
+
+        </executions>
+      </plugin>
+    </plugins>
+
+  </build>
+</project>
+
+
+
+
+

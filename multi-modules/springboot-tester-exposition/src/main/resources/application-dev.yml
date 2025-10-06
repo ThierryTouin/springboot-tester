@@ -1,0 +1,42 @@
+appli:
+  version: 1.0.0 (dev)
+
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  ## http://localhost:8080/actuator/beans    
+    beans:
+      enabled: true  
+
+
+spring:
+  devtools:
+    restart:
+      enabled: false
+      #additional-paths: ../springboot-tester-exposition/src/main/java,../springboot-tester-application/src/main/java,../springboot-tester-domain/src/main/java,../springboot-tester-exposition/target/classes,../springboot-tester-application/target/classes,../springboot-tester-domain/target/classes
+      #additional-paths: ../springboot-tester-exposition/target/classes,../springboot-tester-application/target/classes,../springboot-tester-domain/target/classes
+      additional-paths: ../restarter/trigger
+      exclude: static/**,public/**
+      log-condition-evaluation-delta: true
+      #trigger-file: ../restarter/.trigger.restart
+
+# application-dev.yml (dans le module exposition)
+  config:
+    import:
+      - classpath:infrastructure-config-dev.yml    
+
+
+# src/main/resources/application-dev.yml
+logging:
+  file:
+    name: logs/dev.log      
+

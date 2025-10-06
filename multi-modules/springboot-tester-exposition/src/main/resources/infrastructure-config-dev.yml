@@ -1,0 +1,9 @@
+infrastructure:
+  feature:
+    enabled: true
+  business:
+    threshold: 100
+  services:
+    rest:
+      postal-code:
+        endpoint: http://mon-service-dev.fr/xxxx  
