@@ -91,8 +91,20 @@
       <version>0.8.12</version>
     </dependency>
 
-
-  </dependencies>
+<!-- Trace with AOP - bytecode -->
+<!-- <dependency>
+  <groupId>org.springframework</groupId>
+  <artifactId>spring-aspects</artifactId>
+</dependency>
+<dependency>
+  <groupId>org.aspectj</groupId>
+  <artifactId>aspectjweaver</artifactId>
+</dependency>
+<dependency>
+  <groupId>org.springframework</groupId>
+  <artifactId>spring-tx</artifactId>
+</dependency>-->
+  </dependencies> 
 
   <build>
     <plugins>

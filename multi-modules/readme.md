@@ -33,7 +33,10 @@ mvn clean verify
 
 sudo apt-get install inotify-tools
 
+## Trouver la méthode pour AspectJ 
+ls ~/.m2/repository/org/aspectj/aspectjweaver/*/aspectjweaver-*.jar
 
+mvn spring-boot:run -pl springboot-tester-exposition -Dspring-boot.run.jvmArguments="-javaagent:/root/.m2/repository/org/aspectj/aspectjweaver/1.9.24/aspectjweaver-1.9.24.jar" -Dspring.devtools.restart.enabled=false -Daj.weaving.silent=true
 
 
 

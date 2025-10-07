@@ -3,6 +3,8 @@ package com.touin.thierry.sb.test.application.service;
 import com.touin.thierry.sb.test.application.dto.PigDTO;
 import com.touin.thierry.sb.test.springboottester.domain.PigBizService;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +23,6 @@ private static final Logger LOGGER = LoggerFactory.getLogger(PigServiceImpl.clas
     @Autowired
     private PigBizService pigBizService;
 
-
     @Override
     public List<PigDTO> getPigs() {
         List<PigDTO> pigs = List.of(
@@ -36,7 +37,8 @@ private static final Logger LOGGER = LoggerFactory.getLogger(PigServiceImpl.clas
 		}
         System.out.println(">>> pigs={}" + pigs);
 
-        hasPermisisons();
+        // hasPermisisons();
+        this.hasPermisisons();
 
         pigBizService.test();
 
