@@ -130,10 +130,14 @@
               <goals>
                 <goal>prepare-agent</goal>
               </goals>
+              <configuration>
+                  <destFile>${project.build.directory}/jacoco.exec</destFile>
+                  <propertyName>jacoco.agent.argLine</propertyName> 
+              </configuration>              
             </execution>
             <execution>
               <id>report</id>
-              <phase>test</phase>
+              <phase>verify</phase>
               <goals>
                 <goal>report</goal>
               </goals>
