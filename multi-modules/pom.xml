@@ -16,6 +16,7 @@
     <module>springboot-tester-infrastructure</module>
     <module>springboot-tester-infrastructure-mock</module>
     <module>springboot-tester-exposition</module>
+    <module>springboot-tester-test-reports</module>
   </modules>
 
   <properties>
@@ -27,6 +28,7 @@
     <maven-surefire-plugin.version>2.12.4</maven-surefire-plugin.version> 
     <io.cucumber.version>7.14.0</io.cucumber.version>
     <jacoco.version>0.8.12</jacoco.version>
+    <report.path>springboot-tester-test-reports/target/site/jacoco-aggregate/jacoco.xml</report.path>
   </properties>
 
 
@@ -148,111 +150,6 @@
             <release>${java.version}</release>
           </configuration>
         </plugin>
-        
-
-
-        <!-- Optionnel: jacoco en tant que plugin (exécuter couverture) -->
-      <!-- <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <version>${jacoco.version}</version>
-        <executions>
-          <execution>
-            <id>prepare-agent</id>
-            <goals>
-              <goal>prepare-agent</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>report</id>
-            <phase>test</phase>
-            <goals>
-              <goal>report</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin> -->
-
-<!-- <plugin>
-    <groupId>org.jacoco</groupId>
-    <artifactId>jacoco-maven-plugin</artifactId>
-    <version>${jacoco.version}</version>
-    <executions>
-        <execution>
-            <id>prepare-agent</id>
-            <goals>
-                <goal>prepare-agent</goal>
-            </goals>
-        </execution>
-        <execution>
-            <id>report-aggregate</id>
-            <goals>
-                <goal>report-aggregate</goal>
-            </goals>
-            <phase>verify</phase>
-
-
-            <configuration>
-                <outputDirectory>
-                    ${project.parent.reporting.outputDirectory}/jacoco-aggregate
-                </outputDirectory>
-                <title>${project.parent.name}</title>
-            </configuration>
-        </execution>
-    </executions>
-</plugin> -->
-
-
-
-        <plugin>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <version>${jacoco.version}</version>
-            <executions>
-                <!-- <execution>
-                    <id>jacoco-initialize</id>
-                    <goals>
-                        <goal>prepare-agent</goal>
-                    </goals>
-                    <configuration>
-                        <destFile>${project.build.directory}/jacoco.exec</destFile>
-                        <propertyName>jacoco.agent.argLine</propertyName> 
-                    </configuration>
-                </execution> -->
-                
-              <execution>
-                  <id>report-aggregate</id>
-                  <goals>
-                      <goal>report-aggregate</goal>
-                  </goals>
-                  <phase>verify</phase>
-
-
-                  <configuration>
-                      <outputDirectory>
-                          ${project.parent.reporting.outputDirectory}/jacoco-aggregate
-                      </outputDirectory>
-                      <title>${project.parent.name}</title>
-                  </configuration>
-              </execution>
-            </executions>
-        </plugin>
-        
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>${maven-surefire-plugin.version}</version>
-            <configuration>
-                <argLine>${jacoco.agent.argLine}</argLine> 
-            </configuration>
-        </plugin>
-
-
-
-
-
-
-
       </plugins>
 
     </pluginManagement>
