@@ -6,7 +6,7 @@
 
   <groupId>com.touin.thierry.sb.test</groupId>
   <artifactId>springboot-tester</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>${sbt.version}</version>
   <packaging>pom</packaging>
   <name>Projet Spring Boot Multi-Modules</name>
 
@@ -16,6 +16,7 @@
     <module>springboot-tester-infrastructure</module>
     <module>springboot-tester-infrastructure-mock</module>
     <module>springboot-tester-exposition</module>
+    <module>springboot-tester-test-reports</module>
   </modules>
 
   <properties>
@@ -27,6 +28,8 @@
     <maven-surefire-plugin.version>2.12.4</maven-surefire-plugin.version> 
     <io.cucumber.version>7.14.0</io.cucumber.version>
     <jacoco.version>0.8.12</jacoco.version>
+    <report.path>springboot-tester-test-reports/target/site/jacoco-aggregate/jacoco.xml</report.path>
+    <sbt.version>1.8.0</sbt.version>
   </properties>
 
 
@@ -70,6 +73,7 @@
               </includes>
               <!-- <failIfNoTests>true</failIfNoTests> -->
             </configuration>
+
           </plugin>
         </plugins>
       </build>      
@@ -147,111 +151,8 @@
             <release>${java.version}</release>
           </configuration>
         </plugin>
-        
+      </plugins>
 
-
-
-
-
-
-
-
-      <!-- JaCoCo : prepare-agent (pour générer jacoco.exec dans chaque module)
-           et report-aggregate (exécuté dans le parent packaging=pom) -->
-      <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <version>${jacoco.version}</version>
-        <executions>
-          <execution>
-            <id>prepare-agent</id>
-            <goals>
-              <goal>prepare-agent</goal>
-            </goals>
-            <!-- pas de <phase> pour le préparer avant surefire/failsafe -->
-          </execution>
-
-          <!-- report-aggregate : exécuté dans le parent (packaging pom) -->
-          <execution>
-            <id>report-aggregate</id>
-            <goals>
-              <goal>report-aggregate</goal>
-            </goals>
-            <phase>verify</phase>
-            <configuration>
-              <outputDirectory>${project.reporting.outputDirectory}/jacoco-aggregate</outputDirectory>
-              <title>${project.name} - Coverage (aggregate)</title>
-            </configuration>
-          </execution>
-
-        </executions>
-      </plugin>
-
-      <!-- Surefire : veiller à injecter l'argLine de Jacoco -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <!-- <version>${maven-surefire-plugin.version}</version> -->
-        <version>3.1.2</version> <!-- version moderne compatible Java17 -->
-        <configuration>
-          <!-- concatène si tu as déjà un argLine dans un module -->
-          <argLine>${jacoco.argLine} ${argLine}</argLine>
-    <!-- comportement du fork -->
-    <forkCount>1</forkCount>
-    <reuseForks>true</reuseForks>
-
-    <!-- garder des logs utiles -->
-    <trimStackTrace>false</trimStackTrace>
-
-    <!-- options JVM pour éviter OOM (ajuste selon ta machine) -->
-    <forkedProcessTimeoutInSeconds>600</forkedProcessTimeoutInSeconds>
-    <additionalClasspathElements/>
-    <environmentVariables/>
-    <testFailureIgnore>false</testFailureIgnore>
-
-        </configuration>
-      </plugin>
-
-      <!-- Failsafe : si tu utilises Failsafe pour des tests d'intégration -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-failsafe-plugin</artifactId>
-        <version>3.1.2</version>
-        <configuration>
-          <argLine>${jacoco.argLine} ${argLine}</argLine>
-    <forkCount>1</forkCount>
-    <reuseForks>true</reuseForks>
-    <trimStackTrace>false</trimStackTrace>
-        </configuration>
-      </plugin>
-
-    </plugins>
-  </pluginManagement>
-
-  <!-- Appliquer les plugins (assure-toi qu'ils sont activés dans la build) -->
-  <plugins>
-    <!-- applique surefire (configuration effective issue de pluginManagement) -->
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-surefire-plugin</artifactId>
-    </plugin>
-
-    <!-- applique failsafe si besoin -->
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-failsafe-plugin</artifactId>
-    </plugin>
-
-    <!-- applique jacoco prepare-agent au niveau parent (héritage) -->
-    <plugin>
-      <groupId>org.jacoco</groupId>
-      <artifactId>jacoco-maven-plugin</artifactId>
-    </plugin>
-  </plugins>
-</build>
-
-
-
-
-
+    </pluginManagement>
+  </build>
 </project>
