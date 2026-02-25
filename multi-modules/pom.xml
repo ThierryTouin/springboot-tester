@@ -6,7 +6,7 @@
 
   <groupId>com.touin.thierry.sb.test</groupId>
   <artifactId>springboot-tester</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>${sbt.version}</version>
   <packaging>pom</packaging>
   <name>Projet Spring Boot Multi-Modules</name>
 
@@ -29,6 +29,7 @@
     <io.cucumber.version>7.14.0</io.cucumber.version>
     <jacoco.version>0.8.12</jacoco.version>
     <report.path>springboot-tester-test-reports/target/site/jacoco-aggregate/jacoco.xml</report.path>
+    <sbt.version>1.8.0</sbt.version>
   </properties>
 
 
