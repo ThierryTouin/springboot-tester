@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.touin.thierry.sb.test</groupId>
+    <artifactId>springboot-tester</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>springboot-tester-test-reports</artifactId>
+  <dependencies>
+    <dependency>
+      <groupId>com.touin.thierry.sb.test</groupId>
+      <artifactId>springboot-tester-application</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.touin.thierry.sb.test</groupId>
+      <artifactId>springboot-tester-domain</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.touin.thierry.sb.test</groupId>
+      <artifactId>springboot-tester-infrastructure</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.touin.thierry.sb.test</groupId>
+      <artifactId>springboot-tester-infrastructure-mock</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.touin.thierry.sb.test</groupId>
+      <artifactId>springboot-tester-exposition</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+      <plugins>
+        <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.version}</version>
+                <executions>
+
+                    
+                <execution>
+                    <id>report-aggregate</id>
+                    <goals>
+                        <goal>report-aggregate</goal>
+                    </goals>
+                    <phase>verify</phase>
+
+
+                    <configuration>
+                        <outputDirectory>
+                            ${project.build.directory}/site/jacoco
+                        </outputDirectory>
+                        <title>${project.parent.name}</title>
+                    </configuration>
+                </execution>
+                </executions>
+            </plugin>
+      </plugins>
+  </build>
+
+
+
+</project>
