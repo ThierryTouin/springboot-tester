@@ -39,7 +39,7 @@ case "$1" in
     mvn clean install -Pmock -Dspring.profiles.active=mock
     ;;
   build-all-skip)
-    mvn clean install -DskipTests -Pmock
+    mvn clean install -U -DskipTests -Pmock
     ;;
   test)
     mvn clean verify
@@ -48,7 +48,7 @@ case "$1" in
     mvn clean verify -Pmock -Dspring.profiles.active=mock
     ;;
   start)
-    mvn spring-boot:run -pl springboot-tester-exposition
+    mvn -pl springboot-tester-exposition spring-boot:run -am
     ;;
   start-dev)
     mvn spring-boot:run -Dspring-boot.run.profiles=dev -pl springboot-tester-exposition

@@ -4101,3 +4101,103 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x16
 2026-02-25 14:19:50.184 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - --j_execute_le_service_hello()
 2026-02-25 14:19:50.185 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - ++le_resultat_est()
 2026-02-25 14:19:50.194 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - --le_resultat_est()
+2026-02-25 14:36:09.886 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 17.0.18 with PID 418 (started by root in /home/user1/app/springboot-tester/multi-modules/springboot-tester-exposition)
+2026-02-25 14:36:09.890 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - No active profile set, falling back to 1 default profile: "default"
+2026-02-25 14:36:12.257 [main] INFO  c.t.t.s.t.s.i.e.CacheConfig - ++externalServiceCache()
+2026-02-25 14:36:12.307 [main] INFO  c.t.t.s.t.s.i.e.CacheConfig - --externalServiceCache()
+2026-02-25 14:36:12.343 [main] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myService()
+2026-02-25 14:36:12.343 [main] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myService()
+2026-02-25 14:36:12.399 [main] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myHelloWorldRealAdapter()
+2026-02-25 14:36:12.399 [main] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myHelloWorldRealAdapter()
+2026-02-25 14:36:12.907 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-25 14:36:14.000 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-25 14:36:14.088 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 5.044 seconds (process running for 6.877)
+2026-02-25 14:36:14.988 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - ++le_service_hello_est_pret()
+2026-02-25 14:36:14.989 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - --le_service_hello_est_pret()
+2026-02-25 14:36:14.993 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - ++j_execute_le_service_hello()
+2026-02-25 14:36:14.993 [main] INFO  c.t.t.s.t.a.s.HelloWorldService - ++execute()
+2026-02-25 14:36:14.993 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - ++sayHello()
+2026-02-25 14:36:14.994 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - sayHello()
+2026-02-25 14:36:14.994 [main] INFO  c.t.t.s.t.s.i.HelloWorldRealAdapter - ++sayHello()
+2026-02-25 14:36:14.994 [main] INFO  c.t.t.s.t.s.i.HelloWorldRealAdapter - sayHello()
+2026-02-25 14:36:14.995 [main] INFO  c.t.t.s.t.s.i.HelloWorldRealAdapter - --sayHello()
+2026-02-25 14:36:14.995 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - --sayHello()
+2026-02-25 14:36:14.995 [main] INFO  c.t.t.s.t.a.s.HelloWorldService - --execute()
+2026-02-25 14:36:14.995 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - --j_execute_le_service_hello()
+2026-02-25 14:36:14.996 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - ++le_resultat_est()
+2026-02-25 14:36:15.004 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - --le_resultat_est()
+2026-02-25 14:37:22.509 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 17.0.18 with PID 532 (/home/user1/app/springboot-tester/multi-modules/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/multi-modules/springboot-tester-exposition)
+2026-02-25 14:37:22.512 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-25 14:37:22.552 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-25 14:37:22.553 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-25 14:37:23.802 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-25 14:37:23.813 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-25 14:37:23.815 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-25 14:37:23.816 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-02-25 14:37:23.852 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-25 14:37:23.853 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1300 ms
+2026-02-25 14:37:24.082 [restartedMain] INFO  c.t.t.s.t.s.i.e.CacheConfig - ++externalServiceCache()
+2026-02-25 14:37:24.102 [restartedMain] INFO  c.t.t.s.t.s.i.e.CacheConfig - --externalServiceCache()
+2026-02-25 14:37:24.113 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myService()
+2026-02-25 14:37:24.114 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myService()
+2026-02-25 14:37:24.140 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myHelloWorldRealAdapter()
+2026-02-25 14:37:24.140 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myHelloWorldRealAdapter()
+2026-02-25 14:37:24.299 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-25 14:37:24.821 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-25 14:37:24.829 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-25 14:37:24.879 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-25 14:37:24.891 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-25 14:37:24.909 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.867 seconds (process running for 3.16)
+2026-02-25 14:37:24.949 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2026-02-25 14:38:28.633 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-25 14:38:28.638 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-25 14:44:41.128 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Starting SpringBootTesterApplication using Java 17.0.18 with PID 699 (/home/user1/app/springboot-tester/multi-modules/springboot-tester-exposition/target/classes started by root in /home/user1/app/springboot-tester/multi-modules/springboot-tester-exposition)
+2026-02-25 14:44:41.130 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-25 14:44:41.172 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-25 14:44:41.172 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-25 14:44:42.440 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-25 14:44:42.450 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-25 14:44:42.451 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-25 14:44:42.452 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-02-25 14:44:42.491 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-25 14:44:42.491 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1318 ms
+2026-02-25 14:44:42.709 [restartedMain] INFO  c.t.t.s.t.s.i.e.CacheConfig - ++externalServiceCache()
+2026-02-25 14:44:42.729 [restartedMain] INFO  c.t.t.s.t.s.i.e.CacheConfig - --externalServiceCache()
+2026-02-25 14:44:42.740 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myService()
+2026-02-25 14:44:42.741 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myService()
+2026-02-25 14:44:42.761 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myHelloWorldRealAdapter()
+2026-02-25 14:44:42.762 [restartedMain] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myHelloWorldRealAdapter()
+2026-02-25 14:44:42.933 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-25 14:44:43.444 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-25 14:44:43.453 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-25 14:44:43.502 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-25 14:44:43.514 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-25 14:44:43.536 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started SpringBootTesterApplication in 2.913 seconds (process running for 3.196)
+2026-02-25 14:44:43.577 [restartedMain] INFO  c.t.t.s.t.s.SpringBootTesterApplication - Started ok 3 !!!
+2026-02-25 15:02:30.746 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-25 15:02:30.755 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-25 16:18:43.105 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 17.0.18 with PID 1368 (started by root in /home/user1/app/springboot-tester/multi-modules/springboot-tester-exposition)
+2026-02-25 16:18:43.108 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - No active profile set, falling back to 1 default profile: "default"
+2026-02-25 16:18:45.369 [main] INFO  c.t.t.s.t.s.i.e.CacheConfig - ++externalServiceCache()
+2026-02-25 16:18:45.424 [main] INFO  c.t.t.s.t.s.i.e.CacheConfig - --externalServiceCache()
+2026-02-25 16:18:45.462 [main] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myService()
+2026-02-25 16:18:45.463 [main] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myService()
+2026-02-25 16:18:45.520 [main] INFO  c.t.t.s.t.s.i.InfraConfiguration - ++myHelloWorldRealAdapter()
+2026-02-25 16:18:45.521 [main] INFO  c.t.t.s.t.s.i.InfraConfiguration - --myHelloWorldRealAdapter()
+2026-02-25 16:18:46.090 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-25 16:18:47.270 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-25 16:18:47.359 [main] INFO  c.t.t.s.t.s.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 5.12 seconds (process running for 6.956)
+2026-02-25 16:18:48.332 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - ++le_service_hello_est_pret()
+2026-02-25 16:18:48.333 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - --le_service_hello_est_pret()
+2026-02-25 16:18:48.338 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - ++j_execute_le_service_hello()
+2026-02-25 16:18:48.339 [main] INFO  c.t.t.s.t.a.s.HelloWorldService - ++execute()
+2026-02-25 16:18:48.339 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - ++sayHello()
+2026-02-25 16:18:48.339 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - sayHello()
+2026-02-25 16:18:48.339 [main] INFO  c.t.t.s.t.s.i.HelloWorldRealAdapter - ++sayHello()
+2026-02-25 16:18:48.339 [main] INFO  c.t.t.s.t.s.i.HelloWorldRealAdapter - sayHello()
+2026-02-25 16:18:48.340 [main] INFO  c.t.t.s.t.s.i.HelloWorldRealAdapter - --sayHello()
+2026-02-25 16:18:48.340 [main] INFO  c.t.t.s.t.s.d.HelloWorldUseCaseImpl - --sayHello()
+2026-02-25 16:18:48.340 [main] INFO  c.t.t.s.t.a.s.HelloWorldService - --execute()
+2026-02-25 16:18:48.340 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - --j_execute_le_service_hello()
+2026-02-25 16:18:48.341 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - ++le_resultat_est()
+2026-02-25 16:18:48.349 [main] INFO  c.t.t.s.t.s.steps.HelloSteps - --le_resultat_est()

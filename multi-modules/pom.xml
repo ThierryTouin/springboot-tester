@@ -6,7 +6,7 @@
 
   <groupId>com.touin.thierry.sb.test</groupId>
   <artifactId>springboot-tester</artifactId>
-  <version>${sbt.version}</version>
+  <version>${revision}</version>
   <packaging>pom</packaging>
   <name>Projet Spring Boot Multi-Modules</name>
 
@@ -20,6 +20,7 @@
   </modules>
 
   <properties>
+    <revision>1.8.0</revision>
     <java.version>17</java.version>
     <spring.boot.version>3.5.0</spring.boot.version>
     <slf4j.version>2.0.13</slf4j.version>
@@ -29,7 +30,6 @@
     <io.cucumber.version>7.14.0</io.cucumber.version>
     <jacoco.version>0.8.12</jacoco.version>
     <report.path>springboot-tester-test-reports/target/site/jacoco-aggregate/jacoco.xml</report.path>
-    <sbt.version>1.8.0</sbt.version>
   </properties>
 
 
@@ -140,6 +140,7 @@
         <plugin>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>${spring.boot.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
